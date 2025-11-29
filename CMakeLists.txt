@@ -1,0 +1,150 @@
+cmake_minimum_required(VERSION 3.16.3)
+project(impulse_ml_neural_network)
+
+set(CMAKE_CXX_STANDARD 14)
+
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release)
+endif()
+
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -march=native")
+
+include_directories(src/Impulse/NeuralNetwork)
+include_directories(src/Impulse/NeuralNetwork/Builder)
+include_directories(src/Impulse/NeuralNetwork/Layer)
+include_directories(src/Impulse/NeuralNetwork/Layer/BackPropagation)
+include_directories(src/Impulse/NeuralNetwork/Math)
+include_directories(src/Impulse/NeuralNetwork/Network)
+include_directories(src/Impulse/NeuralNetwork/Trainer)
+include_directories(src/Impulse/NeuralNetwork/Trainer/Optimizer)
+include_directories(src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset)
+include_directories(src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder)
+include_directories(src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier)
+include_directories(src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier)
+include_directories(src/Vendor/json)
+include_directories(src/Vendor/json/src)
+
+add_executable(impulse_ml_neural_network
+        src/Impulse/NeuralNetwork/Builder/Abstract.cpp
+        src/Impulse/NeuralNetwork/Builder/Abstract.h
+        src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp
+        src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.h
+        src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp
+        src/Impulse/NeuralNetwork/Builder/ConvBuilder.h
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.h
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.h
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.h
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.h
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.h
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp
+        src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.h
+        src/Impulse/NeuralNetwork/Layer/Abstract.cpp
+        src/Impulse/NeuralNetwork/Layer/Abstract.h
+        src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp
+        src/Impulse/NeuralNetwork/Layer/Abstract1D.h
+        src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp
+        src/Impulse/NeuralNetwork/Layer/Abstract3D.h
+        src/Impulse/NeuralNetwork/Layer/Conv.cpp
+        src/Impulse/NeuralNetwork/Layer/Conv.h
+        src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp
+        src/Impulse/NeuralNetwork/Layer/FullyConnected.h
+        src/Impulse/NeuralNetwork/Layer/Logistic.cpp
+        src/Impulse/NeuralNetwork/Layer/Logistic.h
+        src/Impulse/NeuralNetwork/Layer/MaxPool.cpp
+        src/Impulse/NeuralNetwork/Layer/MaxPool.h
+        src/Impulse/NeuralNetwork/Layer/Purelin.cpp
+        src/Impulse/NeuralNetwork/Layer/Purelin.h
+        src/Impulse/NeuralNetwork/Layer/Relu.cpp
+        src/Impulse/NeuralNetwork/Layer/Relu.h
+        src/Impulse/NeuralNetwork/Layer/Softmax.cpp
+        src/Impulse/NeuralNetwork/Layer/Softmax.h
+        src/Impulse/NeuralNetwork/Layer/Softplus.cpp
+        src/Impulse/NeuralNetwork/Layer/Softplus.h
+        src/Impulse/NeuralNetwork/Layer/Tanh.cpp
+        src/Impulse/NeuralNetwork/Layer/Tanh.h
+        src/Impulse/NeuralNetwork/Math/common.cpp
+        src/Impulse/NeuralNetwork/Math/common.h
+        src/Impulse/NeuralNetwork/Math/Fmincg.cpp
+        src/Impulse/NeuralNetwork/Math/Fmincg.h
+        src/Impulse/NeuralNetwork/Network/Abstract.cpp
+        src/Impulse/NeuralNetwork/Network/Abstract.h
+        src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp
+        src/Impulse/NeuralNetwork/Network/ClassifierNetwork.h
+        src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp
+        src/Impulse/NeuralNetwork/Network/ConvNetwork.h
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.h
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.h
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.h
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.h
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.h
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.h
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.h
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp
+        src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.h
+        src/Impulse/NeuralNetwork/Trainer/Abstract.cpp
+        src/Impulse/NeuralNetwork/Trainer/Abstract.h
+        src/Impulse/NeuralNetwork/Trainer/common.h
+        src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp
+        src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.h
+        src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp
+        src/Impulse/NeuralNetwork/Trainer/MiniBatch.h
+        src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp
+        src/Impulse/NeuralNetwork/Trainer/Stochastic.h
+        src/Impulse/NeuralNetwork/AbstractComputation.cpp
+        src/Impulse/NeuralNetwork/AbstractComputation.h
+        src/Impulse/NeuralNetwork/common.h
+        src/Impulse/NeuralNetwork/Computation.cpp
+        src/Impulse/NeuralNetwork/Computation.h
+        src/Impulse/NeuralNetwork/ComputationCpu.cpp
+        src/Impulse/NeuralNetwork/ComputationCpu.h
+        src/Impulse/NeuralNetwork/include.h
+        src/Impulse/NeuralNetwork/Serializer.cpp
+        src/Impulse/NeuralNetwork/Serializer.h
+        src/Impulse/NeuralNetwork/utils.cpp
+        src/Impulse/NeuralNetwork/utils.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.h
+        src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/include.h
+        src/Vendor/json/src/json.hpp
+        main.cpp src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp)
