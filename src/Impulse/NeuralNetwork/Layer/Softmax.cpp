@@ -17,8 +17,8 @@ namespace Impulse {
                 return this->computation->softmaxDerivative(a);
             }
 
-            const T_String Softmax::getType() {
-                return TYPE_SOFTMAX;
+            LayerType Softmax::getType() {
+                return LayerType::Softmax;
             }
 
             double Softmax::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {

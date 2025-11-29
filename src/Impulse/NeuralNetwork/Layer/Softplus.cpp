@@ -17,8 +17,8 @@ namespace Impulse {
                 return this->computation->softplusDerivative(a);
             }
 
-            const T_String Softplus::getType() {
-                return TYPE_SOFTPLUS;
+            LayerType Softplus::getType() {
+                return LayerType::Softplus;
             }
 
             double Softplus::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {

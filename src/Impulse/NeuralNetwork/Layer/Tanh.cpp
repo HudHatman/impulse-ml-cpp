@@ -17,8 +17,8 @@ namespace Impulse {
                 return this->computation->tanhDerivative(a);
             }
 
-            const T_String Tanh::getType() {
-                return TYPE_TANH;
+            LayerType Tanh::getType() {
+                return LayerType::Tanh;
             }
 
             double Tanh::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {

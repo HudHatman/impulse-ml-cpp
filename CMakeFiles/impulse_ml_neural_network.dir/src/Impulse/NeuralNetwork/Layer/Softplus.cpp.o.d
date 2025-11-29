@@ -594,6 +594,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplu
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/../Layer/BackPropagation/BackPropagationToConv.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/../Layer/BackPropagation/BackPropagation3DTo1D.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/../Layer/BackPropagation/Factory.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/../Layer/types.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/../Layer/Abstract.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/../Layer/Abstract1D.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/../Layer/Abstract3D.h \

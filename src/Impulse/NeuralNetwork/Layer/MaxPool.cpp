@@ -55,8 +55,8 @@ namespace Impulse {
                 return Eigen::MatrixXd(); // no derivative for maxpool layer
             }
 
-            const T_String MaxPool::getType() {
-                return TYPE_MAXPOOL;
+            LayerType MaxPool::getType() {
+                return LayerType::MaxPool;
             }
 
             double MaxPool::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {

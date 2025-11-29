@@ -59,7 +59,7 @@ namespace Impulse {
 
                         for (T_Size j = 0; j < this->network.getSize(); j++) {
                             Layer::LayerPointer layer = this->network.getLayer(j);
-                            if (layer->getType() == Layer::TYPE_MAXPOOL) {
+                            if (layer->getType() == Layer::LayerType::MaxPool) {
                                 continue;
                             }
                             this->optimizer->setT(++t);

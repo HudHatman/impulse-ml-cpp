@@ -35,7 +35,7 @@ namespace Impulse {
 
                 Eigen::MatrixXd derivative(Eigen::MatrixXd &a) override;
 
-                const T_String getType() override;
+                LayerType getType() override;
 
                 double loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) override;
 

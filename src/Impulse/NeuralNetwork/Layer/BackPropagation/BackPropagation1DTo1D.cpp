@@ -1,17 +1,11 @@
 #include "../../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             namespace BackPropagation {
-
                 BackPropagation1DTo1D::BackPropagation1DTo1D
-                        (Layer::LayerPointer layer, Layer::LayerPointer previousLayer) :
-                        Abstract(layer, previousLayer) {
-
+                (Layer::LayerPointer layer, Layer::LayerPointer previousLayer) : Abstract(layer, previousLayer) {
                 }
 
                 Eigen::MatrixXd BackPropagation1DTo1D::propagate(const Eigen::MatrixXd &input,
@@ -20,11 +14,13 @@ namespace Impulse {
                                                                  const Eigen::MatrixXd &sigma) {
                     Eigen::MatrixXd dZ = sigma;
 
-                    if (this->layer->isLast()) {
+                    if (this->layer->isLast() && this->layer->getType() != LayerType::Softmax) {
                         dZ = sigma * this->layer->derivative(this->layer->getComputation()->getVariable("Z"));
                     }
                     Eigen::MatrixXd previousActivations =
-                            this->previousLayer == nullptr ? input : this->previousLayer->getComputation()->getVariable(
+                            this->previousLayer == nullptr
+                                ? input
+                                : this->previousLayer->getComputation()->getVariable(
                                     "A");
 
                     Eigen::MatrixXd W = this->layer->getComputation()->getVariable("W");

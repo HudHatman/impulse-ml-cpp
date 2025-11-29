@@ -121,8 +121,8 @@ namespace Impulse {
                 return this->computation->reluDerivative(a);
             }
 
-            const T_String Conv::getType() {
-                return TYPE_CONV;
+            LayerType Conv::getType() {
+                return LayerType::Conv;
             }
 
             double Conv::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {

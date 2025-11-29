@@ -27,6 +27,7 @@ CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o: main.cpp \
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -757,6 +758,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/AbstractCompu
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -1451,6 +1453,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/Abstr
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -2145,6 +2148,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/Class
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -2839,6 +2843,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvB
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -3533,6 +3538,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.c
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -4227,6 +4233,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/ComputationCp
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -4921,6 +4928,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstrac
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -5615,6 +5623,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstrac
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -6309,6 +6318,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstrac
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -7003,6 +7013,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -7697,6 +7708,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -8391,6 +8403,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -9085,6 +9098,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -9779,6 +9793,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -10473,6 +10488,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -11167,6 +11183,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Conv.cp
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -11861,6 +11878,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/FullyCo
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -12555,6 +12573,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Logisti
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -13249,6 +13268,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -13943,6 +13963,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Purelin
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -14637,6 +14658,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Relu.cp
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -15331,6 +15353,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softmax
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -16025,6 +16048,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplu
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -16719,6 +16743,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cp
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -17413,6 +17438,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.c
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -18107,6 +18133,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.c
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -18801,6 +18828,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstr
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -19495,6 +19523,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Class
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -20189,6 +20218,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvN
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -20883,6 +20913,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Serializer.cp
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -21577,6 +21608,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Abstr
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -22271,6 +22303,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Conju
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -22965,6 +22998,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/MiniB
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -23659,6 +23693,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -24353,6 +24388,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -25047,6 +25083,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -25741,6 +25778,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -26435,6 +26473,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -27129,6 +27168,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -27823,6 +27863,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -28517,6 +28558,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -29211,6 +29253,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Stoch
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -29905,6 +29948,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/utils.cpp.o: 
   src/Impulse/NeuralNetwork/Layer/Softmax.h \
   src/Impulse/NeuralNetwork/Layer/Softplus.h \
   src/Impulse/NeuralNetwork/Layer/Tanh.h \
+  src/Impulse/NeuralNetwork/Layer/types.h \
   src/Impulse/NeuralNetwork/Math/Fmincg.h \
   src/Impulse/NeuralNetwork/Math/common.h \
   src/Impulse/NeuralNetwork/Network/Abstract.h \
@@ -41028,8 +41072,6 @@ src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp:
 
 src/Impulse/NeuralNetwork/Computation.cpp:
 
-src/Impulse/NeuralNetwork/Builder/Abstract.cpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/15/include/xsaveoptintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/xsavecintrin.h:
@@ -41255,6 +41297,8 @@ src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/serializeintrin.h:
 
@@ -41488,6 +41532,10 @@ src/Impulse/NeuralNetwork/AbstractComputation.cpp:
 
 /usr/include/c++/15/bits/quoted_string.h:
 
+/usr/include/c++/15/limits:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
 /usr/include/asm-generic/errno.h:
 
 src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.h:
@@ -41630,11 +41678,11 @@ src/Impulse/NeuralNetwork/Network/ConvNetwork.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
 
+/usr/include/c++/15/sstream:
+
+src/Impulse/NeuralNetwork/Network/Abstract.h:
+
 /usr/include/c++/15/bits/sstream.tcc:
-
-/usr/include/c++/15/experimental/bits/fs_path.h:
-
-src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -41696,9 +41744,9 @@ src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.h:
 
 src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.h:
 
-/usr/include/c++/15/sstream:
+/usr/include/c++/15/bits/postypes.h:
 
-src/Impulse/NeuralNetwork/Network/Abstract.h:
+src/Vendor/json/src/json.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
 
@@ -41757,6 +41805,10 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/c++/15/bits/algorithmfwd.h:
+
+src/Impulse/NeuralNetwork/Builder/Abstract.cpp:
+
+src/Impulse/NeuralNetwork/Layer/types.h:
 
 /usr/include/c++/15/cwctype:
 
@@ -41847,6 +41899,10 @@ src/Impulse/NeuralNetwork/Math/common.h:
 /usr/lib/gcc/x86_64-linux-gnu/15/include/amxtransposeintrin.h:
 
 /usr/include/c++/15/bits/basic_ios.h:
+
+src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.h:
+
+/usr/include/c++/15/experimental/bits/fs_path.h:
 
 /usr/include/c++/15/bits/shared_ptr.h:
 
@@ -42017,14 +42073,6 @@ src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.h:
 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
 
 /usr/include/c++/15/bits/parse_numbers.h:
-
-src/Vendor/json/src/json.hpp:
-
-/usr/include/c++/15/bits/postypes.h:
-
-/usr/include/c++/15/limits:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/include/eigen3/Eigen/Cholesky:
 
@@ -42597,5 +42645,3 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.c
 /usr/lib/gcc/x86_64-linux-gnu/15/include/adxintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:

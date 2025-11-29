@@ -30,6 +30,7 @@
 #include "Layer/BackPropagation/BackPropagationToConv.h"
 #include "Layer/BackPropagation/BackPropagation3DTo1D.h"
 #include "Layer/BackPropagation/Factory.h"
+#include "Layer/types.h"
 #include "Layer/Abstract.h"
 #include "Layer/Abstract1D.h"
 #include "Layer/Abstract3D.h"

@@ -1,11 +1,8 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Network {
-
             Abstract::Abstract(T_Dimension dim) {
                 this->dimension = dim;
             }
@@ -18,7 +15,7 @@ namespace Impulse {
             Eigen::MatrixXd Abstract::forward(const Eigen::MatrixXd &input) {
                 Eigen::MatrixXd output = input;
 
-                for (auto &layer : this->layers) {
+                for (auto &layer: this->layers) {
                     output = layer->forward(output);
                 }
 
@@ -56,15 +53,15 @@ namespace Impulse {
                 for (T_Size i = 0; i < this->getSize(); i++) {
                     auto layer = this->getLayer(i);
 
-                    if (layer->getType() == Layer::TYPE_MAXPOOL) {
+                    if (layer->getType() == Layer::LayerType::MaxPool) {
                         continue;
                     }
 
                     tmp.reserve(
-                            (unsigned long) (layer->getComputation()->getVariable("W").cols() *
-                                             layer->getComputation()->getVariable("W").rows()) +
-                            (layer->getComputation()->getVariable("b").cols() *
-                             layer->getComputation()->getVariable("b").rows()));
+                        (unsigned long) (layer->getComputation()->getVariable("W").cols() *
+                                         layer->getComputation()->getVariable("W").rows()) +
+                        (layer->getComputation()->getVariable("b").cols() *
+                         layer->getComputation()->getVariable("b").rows()));
 
                     for (T_Size j = 0; j < layer->getComputation()->getVariable("W").rows(); j++) {
                         for (T_Size k = 0; k < layer->getComputation()->getVariable("W").cols(); k++) {
@@ -89,7 +86,7 @@ namespace Impulse {
                 for (T_Size i = 0; i < this->getSize(); i++) {
                     auto layer = this->layers.at(i);
 
-                    if (layer->getType() == Layer::TYPE_MAXPOOL) {
+                    if (layer->getType() == Layer::LayerType::MaxPool) {
                         continue;
                     }
 
@@ -116,7 +113,7 @@ namespace Impulse {
                 for (T_Size i = 0; i < this->getSize(); i++) {
                     auto layer = this->layers.at(i);
 
-                    if (layer->getType() == Layer::TYPE_MAXPOOL) {
+                    if (layer->getType() == Layer::LayerType::MaxPool) {
                         continue;
                     }
 
@@ -143,7 +140,6 @@ namespace Impulse {
             }
 
             void Abstract::debug() {
-
             }
         }
     }

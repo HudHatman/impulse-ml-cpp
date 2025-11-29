@@ -61,7 +61,7 @@ namespace Impulse {
                  * Getter for layer type.
                  * @return
                  */
-                virtual const T_String getType() = 0;
+                virtual LayerType getType() = 0;
 
                 /**
                  * Setter for size.

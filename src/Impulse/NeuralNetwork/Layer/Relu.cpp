@@ -17,8 +17,8 @@ namespace Impulse {
                 return this->computation->reluDerivative(a);
             }
 
-            const T_String Relu::getType() {
-                return TYPE_RELU;
+            LayerType Relu::getType() {
+                return LayerType::Relu;
             }
 
             double Relu::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {

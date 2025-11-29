@@ -19,8 +19,8 @@ namespace Impulse {
                 return d;
             }
 
-            const T_String Purelin::getType() {
-                return TYPE_PURELIN;
+            LayerType Purelin::getType() {
+                return LayerType::Purelin;
             }
 
             double Purelin::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {

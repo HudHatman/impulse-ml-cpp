@@ -17,8 +17,8 @@ namespace Impulse {
                 return this->computation->logisticDerivative(a);
             }
 
-            const T_String Logistic::getType() {
-                return TYPE_LOGISTIC;
+            LayerType Logistic::getType() {
+                return LayerType::Logistic;
             }
 
             double Logistic::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {

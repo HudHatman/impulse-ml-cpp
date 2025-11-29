@@ -1,20 +1,18 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
+            FullyConnected::FullyConnected() : Conv() {
+            };
 
-            FullyConnected::FullyConnected() : Conv() {};
-
-            const T_String FullyConnected::getType() {
-                return TYPE_FULLYCONNECTED;
+            LayerType FullyConnected::getType() {
+                return LayerType::FullyConnected;
             }
 
             void FullyConnected::transition(Layer::LayerPointer prevLayer) {
                 if (prevLayer->is3D()) {
-                    if (prevLayer->getType() == Layer::TYPE_MAXPOOL) {
+                    if (prevLayer->getType() == LayerType::MaxPool) {
                         auto layer = (Layer::MaxPool *) prevLayer.get();
 
                         this->filterSize = layer->getOutputWidth();
