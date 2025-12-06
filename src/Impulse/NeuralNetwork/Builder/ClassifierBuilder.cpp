@@ -8,7 +8,7 @@ namespace Impulse {
 
         namespace Builder {
 
-            ClassifierBuilder::ClassifierBuilder(T_Dimension dims) : Abstract<Network::ClassifierNetwork>(dims) {
+            ClassifierBuilder::ClassifierBuilder(T_Dimension dims) : Abstract<Network::Network>(dims) {
             }
 
             void ClassifierBuilder::firstLayerTransition(Layer::LayerPointer layer) {

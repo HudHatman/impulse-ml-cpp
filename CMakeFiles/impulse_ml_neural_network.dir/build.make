@@ -100,24 +100,10 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/Class
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp.s
 
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o: src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp
-
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp > CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.i
-
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.s
-
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o: src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.i: cmake_force
@@ -131,7 +117,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o: src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.i: cmake_force
@@ -145,7 +131,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.o: src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.i: cmake_force
@@ -159,7 +145,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp.o: src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToConv.cpp.i: cmake_force
@@ -173,7 +159,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp.o: src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagationToMaxPool.cpp.i: cmake_force
@@ -187,7 +173,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp.o: src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Factory.cpp.i: cmake_force
@@ -201,7 +187,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract.cpp.o: src/Impulse/NeuralNetwork/Layer/Abstract.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Abstract.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract.cpp.i: cmake_force
@@ -215,7 +201,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstrac
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp.o: src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract1D.cpp.i: cmake_force
@@ -229,7 +215,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstrac
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp.o: src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstract3D.cpp.i: cmake_force
@@ -243,7 +229,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Abstrac
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Conv.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Conv.cpp.o: src/Impulse/NeuralNetwork/Layer/Conv.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Conv.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Conv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Conv.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Conv.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Conv.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Conv.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Conv.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Conv.cpp.i: cmake_force
@@ -257,7 +243,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Conv.cp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp.o: src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/FullyConnected.cpp.i: cmake_force
@@ -271,7 +257,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/FullyCo
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Logistic.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Logistic.cpp.o: src/Impulse/NeuralNetwork/Layer/Logistic.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Logistic.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Logistic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Logistic.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Logistic.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Logistic.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Logistic.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Logistic.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Logistic.cpp.i: cmake_force
@@ -285,7 +271,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Logisti
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool.cpp.o: src/Impulse/NeuralNetwork/Layer/MaxPool.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/MaxPool.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool.cpp.i: cmake_force
@@ -299,7 +285,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/MaxPool
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Purelin.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Purelin.cpp.o: src/Impulse/NeuralNetwork/Layer/Purelin.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Purelin.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Purelin.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Purelin.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Purelin.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Purelin.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Purelin.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Purelin.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Purelin.cpp.i: cmake_force
@@ -313,7 +299,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Purelin
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Relu.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Relu.cpp.o: src/Impulse/NeuralNetwork/Layer/Relu.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Relu.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Relu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Relu.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Relu.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Relu.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Relu.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Relu.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Relu.cpp.i: cmake_force
@@ -327,7 +313,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Relu.cp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softmax.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softmax.cpp.o: src/Impulse/NeuralNetwork/Layer/Softmax.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softmax.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softmax.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softmax.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softmax.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softmax.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softmax.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Softmax.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softmax.cpp.i: cmake_force
@@ -341,7 +327,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softmax
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplus.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplus.cpp.o: src/Impulse/NeuralNetwork/Layer/Softplus.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplus.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplus.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplus.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplus.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplus.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplus.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Softplus.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplus.cpp.i: cmake_force
@@ -355,7 +341,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Softplu
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.o: src/Impulse/NeuralNetwork/Layer/Tanh.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Tanh.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.i: cmake_force
@@ -369,7 +355,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.o: src/Impulse/NeuralNetwork/Math/common.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/common.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.i: cmake_force
@@ -383,7 +369,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.c
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o: src/Impulse/NeuralNetwork/Math/Fmincg.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/Fmincg.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.i: cmake_force
@@ -394,52 +380,24 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/Fmincg.cpp -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.s
 
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o: src/Impulse/NeuralNetwork/Network/Abstract.cpp
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/Abstract.cpp
+CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
+CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o: src/Impulse/NeuralNetwork/Network/Network.cpp
+CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/Network.cpp
 
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/Abstract.cpp > CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.i
+CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/Network.cpp > CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.i
 
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/Abstract.cpp -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.s
-
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o: src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp
-
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp > CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.i
-
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.s
-
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o: src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp
-
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp > CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.i
-
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.s
+CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/Network.cpp -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.s
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o: src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.i: cmake_force
@@ -453,7 +411,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.o: src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.i: cmake_force
@@ -467,7 +425,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o: src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.i: cmake_force
@@ -481,7 +439,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp.o: src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adam.cpp.i: cmake_force
@@ -495,7 +453,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp.o: src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/GradientDescent.cpp.i: cmake_force
@@ -509,7 +467,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp.o: src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Momentum.cpp.i: cmake_force
@@ -523,7 +481,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp.o: src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Nesterov.cpp.i: cmake_force
@@ -537,7 +495,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp.o: src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Rmsprop.cpp.i: cmake_force
@@ -551,7 +509,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Abstract.cpp.o: src/Impulse/NeuralNetwork/Trainer/Abstract.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Abstract.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Abstract.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Abstract.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Abstract.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Abstract.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Abstract.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Abstract.cpp.i: cmake_force
@@ -565,7 +523,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Abstr
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp.o: src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/ConjugateGradient.cpp.i: cmake_force
@@ -579,7 +537,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Conju
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp.o: src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/MiniBatch.cpp.i: cmake_force
@@ -593,7 +551,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/MiniB
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp.o: src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Stochastic.cpp.i: cmake_force
@@ -607,7 +565,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Stoch
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/AbstractComputation.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/AbstractComputation.cpp.o: src/Impulse/NeuralNetwork/AbstractComputation.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/AbstractComputation.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/AbstractComputation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/AbstractComputation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/AbstractComputation.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/AbstractComputation.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/AbstractComputation.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/AbstractComputation.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/AbstractComputation.cpp.i: cmake_force
@@ -621,7 +579,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/AbstractCompu
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.cpp.o: src/Impulse/NeuralNetwork/Computation.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Computation.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.cpp.i: cmake_force
@@ -635,7 +593,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Computation.c
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/ComputationCpu.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/ComputationCpu.cpp.o: src/Impulse/NeuralNetwork/ComputationCpu.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/ComputationCpu.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/ComputationCpu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/ComputationCpu.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/ComputationCpu.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/ComputationCpu.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/ComputationCpu.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/ComputationCpu.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/ComputationCpu.cpp.i: cmake_force
@@ -649,7 +607,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/ComputationCp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Serializer.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Serializer.cpp.o: src/Impulse/NeuralNetwork/Serializer.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Serializer.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Serializer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Serializer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Serializer.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Serializer.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Serializer.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Serializer.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Serializer.cpp.i: cmake_force
@@ -663,7 +621,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Serializer.cp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/utils.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/utils.cpp.o: src/Impulse/NeuralNetwork/utils.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/utils.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/utils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/utils.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/utils.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/utils.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/utils.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/utils.cpp.i: cmake_force
@@ -677,7 +635,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/utils.cpp.s: 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.cpp.i: cmake_force
@@ -691,7 +649,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.cpp.i: cmake_force
@@ -705,7 +663,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.cpp.i: cmake_force
@@ -719,7 +677,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.cpp.i: cmake_force
@@ -733,7 +691,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.cpp.i: cmake_force
@@ -747,7 +705,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.cpp.i: cmake_force
@@ -761,7 +719,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.cpp.i: cmake_force
@@ -775,7 +733,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.cpp.i: cmake_force
@@ -789,7 +747,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.cpp.i: cmake_force
@@ -803,7 +761,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.cpp.i: cmake_force
@@ -817,7 +775,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.cpp.i: cmake_force
@@ -831,7 +789,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.cpp.i: cmake_force
@@ -845,7 +803,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.cpp.i: cmake_force
@@ -859,7 +817,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.cpp.i: cmake_force
@@ -873,7 +831,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.cpp.i: cmake_force
@@ -887,7 +845,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o: main.cpp
 CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/main.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/main.cpp.i: cmake_force
@@ -901,7 +859,7 @@ CMakeFiles/impulse_ml_neural_network.dir/main.cpp.s: cmake_force
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/flags.make
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp.o: src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp.o: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp.o -MF CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp.o.d -o CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp.o -c /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp.i: cmake_force
@@ -916,7 +874,6 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/impulse-ml-dataset/src/src/I
 impulse_ml_neural_network_OBJECTS = \
 "CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/Abstract.cpp.o" \
 "CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp.o" \
-"CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o" \
 "CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o" \
 "CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o" \
 "CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.o" \
@@ -937,9 +894,7 @@ impulse_ml_neural_network_OBJECTS = \
 "CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.o" \
 "CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.o" \
 "CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o" \
-"CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o" \
-"CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o" \
-"CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o" \
+"CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o" \
 "CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o" \
 "CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.o" \
 "CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o" \
@@ -980,7 +935,6 @@ impulse_ml_neural_network_EXTERNAL_OBJECTS =
 
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/Abstract.cpp.o
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp.o
-impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.o
@@ -1001,9 +955,7 @@ impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.o
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.o
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o
-impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o
-impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o
-impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o
+impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.o
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o
@@ -1041,7 +993,7 @@ impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/src/Vendor/i
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/build.make
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/compiler_depend.ts
 impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Linking CXX executable impulse_ml_neural_network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Linking CXX executable impulse_ml_neural_network"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/impulse_ml_neural_network.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

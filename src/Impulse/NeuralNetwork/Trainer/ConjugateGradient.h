@@ -10,10 +10,10 @@ namespace Impulse {
 
         namespace Trainer {
 
-            template<class OPTIMIZER_TYPE>
-            class ConjugateGradient : public AbstractTrainer<OPTIMIZER_TYPE> {
+            template<class OPTIMIZER_TYPE, class COST_TYPE>
+            class ConjugateGradient : public AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE> {
             public:
-                explicit ConjugateGradient(Network::Abstract &net);
+                explicit ConjugateGradient(Network::Network &net);
 
                 void train(Impulse::Dataset::SlicedDataset &dataSet) override;
             };

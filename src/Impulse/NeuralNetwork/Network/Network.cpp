@@ -3,16 +3,16 @@
 namespace Impulse {
     namespace NeuralNetwork {
         namespace Network {
-            Abstract::Abstract(T_Dimension dim) {
+            Network::Network(T_Dimension dim) {
                 this->dimension = dim;
             }
 
-            void Abstract::addLayer(Layer::LayerPointer layer) {
+            void Network::addLayer(Layer::LayerPointer layer) {
                 this->size++;
                 this->layers.push_back(layer);
             }
 
-            Eigen::MatrixXd Abstract::forward(const Eigen::MatrixXd &input) {
+            Eigen::MatrixXd Network::forward(const Eigen::MatrixXd &input) {
                 Eigen::MatrixXd output = input;
 
                 for (auto &layer: this->layers) {
@@ -23,7 +23,7 @@ namespace Impulse {
             }
 
             void
-            Abstract::backward(Eigen::MatrixXd &X, Eigen::MatrixXd &Y, Eigen::MatrixXd &predictions,
+            Network::backward(Eigen::MatrixXd &X, Eigen::MatrixXd &Y, Eigen::MatrixXd &predictions,
                                double regularization) {
                 long m = X.cols();
 
@@ -35,19 +35,19 @@ namespace Impulse {
                 }
             }
 
-            T_Dimension Abstract::getDimension() {
+            T_Dimension Network::getDimension() {
                 return this->dimension;
             }
 
-            T_Size Abstract::getSize() {
+            T_Size Network::getSize() {
                 return this->size;
             }
 
-            Layer::LayerPointer Abstract::getLayer(T_Size key) {
+            Layer::LayerPointer Network::getLayer(T_Size key) {
                 return this->layers.at(key);
             }
 
-            Eigen::VectorXd Abstract::getRolledTheta() {
+            Eigen::VectorXd Network::getRolledTheta() {
                 Math::T_RawVector tmp;
 
                 for (T_Size i = 0; i < this->getSize(); i++) {
@@ -80,7 +80,7 @@ namespace Impulse {
                 return result;
             }
 
-            Eigen::VectorXd Abstract::getRolledGradient() {
+            Eigen::VectorXd Network::getRolledGradient() {
                 Math::T_RawVector tmp;
 
                 for (T_Size i = 0; i < this->getSize(); i++) {
@@ -107,7 +107,7 @@ namespace Impulse {
                 return result;
             }
 
-            void Abstract::setRolledTheta(Eigen::VectorXd &theta) {
+            void Network::setRolledTheta(Eigen::VectorXd &theta) {
                 unsigned long t = 0;
 
                 for (T_Size i = 0; i < this->getSize(); i++) {
@@ -131,15 +131,15 @@ namespace Impulse {
                 }
             }
 
-            double Abstract::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+            double Network::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
                 return this->layers.at(this->getSize() - 1)->loss(output, predictions);
             }
 
-            double Abstract::error(T_Size m) {
+            double Network::error(T_Size m) {
                 return this->layers.at(this->getSize() - 1)->error(m);
             }
 
-            void Abstract::debug() {
+            void Network::debug() {
             }
         }
     }

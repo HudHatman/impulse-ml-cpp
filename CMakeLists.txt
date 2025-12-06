@@ -29,8 +29,6 @@ add_executable(impulse_ml_neural_network
         src/Impulse/NeuralNetwork/Builder/Abstract.h
         src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp
         src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.h
-        src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp
-        src/Impulse/NeuralNetwork/Builder/ConvBuilder.h
         src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp
         src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.h
         src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp
@@ -71,12 +69,8 @@ add_executable(impulse_ml_neural_network
         src/Impulse/NeuralNetwork/Math/common.h
         src/Impulse/NeuralNetwork/Math/Fmincg.cpp
         src/Impulse/NeuralNetwork/Math/Fmincg.h
-        src/Impulse/NeuralNetwork/Network/Abstract.cpp
-        src/Impulse/NeuralNetwork/Network/Abstract.h
-        src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp
-        src/Impulse/NeuralNetwork/Network/ClassifierNetwork.h
-        src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp
-        src/Impulse/NeuralNetwork/Network/ConvNetwork.h
+        src/Impulse/NeuralNetwork/Network/Network.cpp
+        src/Impulse/NeuralNetwork/Network/Network.h
         src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp
         src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.h
         src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp

@@ -10,9 +10,9 @@ namespace Impulse {
 
         class Serializer {
         protected:
-            Impulse::NeuralNetwork::Network::Abstract network;
+            Impulse::NeuralNetwork::Network::Network network;
         public:
-            explicit Serializer(Impulse::NeuralNetwork::Network::Abstract &net);
+            explicit Serializer(Impulse::NeuralNetwork::Network::Network &net);
 
             void toJSON(T_String path);
         };

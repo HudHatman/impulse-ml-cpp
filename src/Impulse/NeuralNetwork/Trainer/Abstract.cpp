@@ -1,243 +1,193 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Trainer {
-
-            template<typename OPTIMIZER_TYPE>
-            AbstractTrainer<OPTIMIZER_TYPE>::AbstractTrainer(Network::Abstract &net) : network(net) {
+            template<typename OPTIMIZER_TYPE, typename COST_TYPE>
+            AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>::AbstractTrainer(Network::Network &net) : network(net) {
                 this->optimizer = new OPTIMIZER_TYPE;
+                this->cost = new COST_TYPE(net);
             }
 
             template
-            AbstractTrainer<Optimizer::Adam>::AbstractTrainer(Network::Abstract &net);
+            AbstractTrainer<Optimizer::Adam, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
 
             template
-            AbstractTrainer<Optimizer::Adadelta>::AbstractTrainer(Network::Abstract &net);
+            AbstractTrainer<Optimizer::Adadelta, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
 
             template
-            AbstractTrainer<Optimizer::Adagrad>::AbstractTrainer(Network::Abstract &net);
+            AbstractTrainer<Optimizer::Adagrad, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
 
             template
-            AbstractTrainer<Optimizer::GradientDescent>::AbstractTrainer(Network::Abstract &net);
+            AbstractTrainer<Optimizer::GradientDescent, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
 
             template
-            AbstractTrainer<Optimizer::Momentum>::AbstractTrainer(Network::Abstract &net);
+            AbstractTrainer<Optimizer::Momentum, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
 
             template
-            AbstractTrainer<Optimizer::Nesterov>::AbstractTrainer(Network::Abstract &net);
+            AbstractTrainer<Optimizer::Nesterov, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
 
             template
-            AbstractTrainer<Optimizer::Rmsprop>::AbstractTrainer(Network::Abstract &net);
+            AbstractTrainer<Optimizer::Rmsprop, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
 
-            template<typename OPTIMIZER_TYPE>
-            void AbstractTrainer<OPTIMIZER_TYPE>::setRegularization(double value) {
+            template<typename OPTIMIZER_TYPE, typename COST_TYPE>
+            void AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>::setRegularization(double value) {
                 this->regularization = value;
             }
 
             template
-            void AbstractTrainer<Optimizer::Adam>::setRegularization(double value);
+            void AbstractTrainer<Optimizer::Adam, Cost::CrossEntropy>::setRegularization(double value);
 
             template
-            void AbstractTrainer<Optimizer::Adadelta>::setRegularization(double value);
+            void AbstractTrainer<Optimizer::Adadelta, Cost::CrossEntropy>::setRegularization(double value);
 
             template
-            void AbstractTrainer<Optimizer::Adagrad>::setRegularization(double value);
+            void AbstractTrainer<Optimizer::Adagrad, Cost::CrossEntropy>::setRegularization(double value);
 
             template
-            void AbstractTrainer<Optimizer::GradientDescent>::setRegularization(double value);
+            void AbstractTrainer<Optimizer::GradientDescent, Cost::CrossEntropy>::setRegularization(double value);
 
             template
-            void AbstractTrainer<Optimizer::Momentum>::setRegularization(double value);
+            void AbstractTrainer<Optimizer::Momentum, Cost::CrossEntropy>::setRegularization(double value);
 
             template
-            void AbstractTrainer<Optimizer::Nesterov>::setRegularization(double value);
+            void AbstractTrainer<Optimizer::Nesterov, Cost::CrossEntropy>::setRegularization(double value);
 
             template
-            void AbstractTrainer<Optimizer::Rmsprop>::setRegularization(double value);
+            void AbstractTrainer<Optimizer::Rmsprop, Cost::CrossEntropy>::setRegularization(double value);
 
-            template<typename OPTIMIZER_TYPE>
-            void AbstractTrainer<OPTIMIZER_TYPE>::setLearningIterations(T_Size value) {
+            template<typename OPTIMIZER_TYPE, typename COST_TYPE>
+            void AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>::setLearningIterations(T_Size value) {
                 this->learningIterations = value;
             }
 
             template
-            void AbstractTrainer<Optimizer::Adam>::setLearningIterations(T_Size value);
+            void AbstractTrainer<Optimizer::Adam, Cost::CrossEntropy>::setLearningIterations(T_Size value);
 
             template
-            void AbstractTrainer<Optimizer::Adadelta>::setLearningIterations(T_Size value);
+            void AbstractTrainer<Optimizer::Adadelta, Cost::CrossEntropy>::setLearningIterations(T_Size value);
 
             template
-            void AbstractTrainer<Optimizer::Adagrad>::setLearningIterations(T_Size value);
+            void AbstractTrainer<Optimizer::Adagrad, Cost::CrossEntropy>::setLearningIterations(T_Size value);
 
             template
-            void AbstractTrainer<Optimizer::GradientDescent>::setLearningIterations(T_Size value);
+            void AbstractTrainer<Optimizer::GradientDescent, Cost::CrossEntropy>::setLearningIterations(T_Size value);
 
             template
-            void AbstractTrainer<Optimizer::Momentum>::setLearningIterations(T_Size value);
+            void AbstractTrainer<Optimizer::Momentum, Cost::CrossEntropy>::setLearningIterations(T_Size value);
 
             template
-            void AbstractTrainer<Optimizer::Nesterov>::setLearningIterations(T_Size value);
+            void AbstractTrainer<Optimizer::Nesterov, Cost::CrossEntropy>::setLearningIterations(T_Size value);
 
             template
-            void AbstractTrainer<Optimizer::Rmsprop>::setLearningIterations(T_Size value);
+            void AbstractTrainer<Optimizer::Rmsprop, Cost::CrossEntropy>::setLearningIterations(T_Size value);
 
-            template<typename OPTIMIZER_TYPE>
-            void AbstractTrainer<OPTIMIZER_TYPE>::setLearningRate(double value) {
+            template<typename OPTIMIZER_TYPE, typename COST_TYPE>
+            void AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>::setLearningRate(double value) {
                 this->learningRate = value;
                 this->optimizer->setLearningRate(value);
             }
 
             template
-            void AbstractTrainer<Optimizer::Adam>::setLearningRate(double value);
+            void AbstractTrainer<Optimizer::Adam, Cost::CrossEntropy>::setLearningRate(double value);
 
             template
-            void AbstractTrainer<Optimizer::Adadelta>::setLearningRate(double value);
+            void AbstractTrainer<Optimizer::Adadelta, Cost::CrossEntropy>::setLearningRate(double value);
 
             template
-            void AbstractTrainer<Optimizer::Adagrad>::setLearningRate(double value);
+            void AbstractTrainer<Optimizer::Adagrad, Cost::CrossEntropy>::setLearningRate(double value);
 
             template
-            void AbstractTrainer<Optimizer::GradientDescent>::setLearningRate(double value);
+            void AbstractTrainer<Optimizer::GradientDescent, Cost::CrossEntropy>::setLearningRate(double value);
 
             template
-            void AbstractTrainer<Optimizer::Momentum>::setLearningRate(double value);
+            void AbstractTrainer<Optimizer::Momentum, Cost::CrossEntropy>::setLearningRate(double value);
 
             template
-            void AbstractTrainer<Optimizer::Nesterov>::setLearningRate(double value);
+            void AbstractTrainer<Optimizer::Nesterov, Cost::CrossEntropy>::setLearningRate(double value);
 
             template
-            void AbstractTrainer<Optimizer::Rmsprop>::setLearningRate(double value);
+            void AbstractTrainer<Optimizer::Rmsprop, Cost::CrossEntropy>::setLearningRate(double value);
 
-            template<typename OPTIMIZER_TYPE>
-            void AbstractTrainer<OPTIMIZER_TYPE>::setVerbose(bool value) {
+            template<typename OPTIMIZER_TYPE, typename COST_TYPE>
+            void AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>::setVerbose(bool value) {
                 this->verbose = value;
             }
 
             template
-            void AbstractTrainer<Optimizer::Adam>::setVerbose(bool value);
+            void AbstractTrainer<Optimizer::Adam, Cost::CrossEntropy>::setVerbose(bool value);
 
             template
-            void AbstractTrainer<Optimizer::Adadelta>::setVerbose(bool value);
+            void AbstractTrainer<Optimizer::Adadelta, Cost::CrossEntropy>::setVerbose(bool value);
 
             template
-            void AbstractTrainer<Optimizer::Adagrad>::setVerbose(bool value);
+            void AbstractTrainer<Optimizer::Adagrad, Cost::CrossEntropy>::setVerbose(bool value);
 
             template
-            void AbstractTrainer<Optimizer::GradientDescent>::setVerbose(bool value);
+            void AbstractTrainer<Optimizer::GradientDescent, Cost::CrossEntropy>::setVerbose(bool value);
 
             template
-            void AbstractTrainer<Optimizer::Momentum>::setVerbose(bool value);
+            void AbstractTrainer<Optimizer::Momentum, Cost::CrossEntropy>::setVerbose(bool value);
 
             template
-            void AbstractTrainer<Optimizer::Nesterov>::setVerbose(bool value);
+            void AbstractTrainer<Optimizer::Nesterov, Cost::CrossEntropy>::setVerbose(bool value);
 
             template
-            void AbstractTrainer<Optimizer::Rmsprop>::setVerbose(bool value);
+            void AbstractTrainer<Optimizer::Rmsprop, Cost::CrossEntropy>::setVerbose(bool value);
 
-            template<typename OPTIMIZER_TYPE>
-            void AbstractTrainer<OPTIMIZER_TYPE>::setVerboseStep(int value) {
+            template<typename OPTIMIZER_TYPE, typename COST_TYPE>
+            void AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>::setVerboseStep(int value) {
                 this->verboseStep = value;
             }
 
             template
-            void AbstractTrainer<Optimizer::Adam>::setVerboseStep(int value);
+            void AbstractTrainer<Optimizer::Adam, Cost::CrossEntropy>::setVerboseStep(int value);
 
             template
-            void AbstractTrainer<Optimizer::Adadelta>::setVerboseStep(int value);
+            void AbstractTrainer<Optimizer::Adadelta, Cost::CrossEntropy>::setVerboseStep(int value);
 
             template
-            void AbstractTrainer<Optimizer::Adagrad>::setVerboseStep(int value);
+            void AbstractTrainer<Optimizer::Adagrad, Cost::CrossEntropy>::setVerboseStep(int value);
 
             template
-            void AbstractTrainer<Optimizer::GradientDescent>::setVerboseStep(int value);
+            void AbstractTrainer<Optimizer::GradientDescent, Cost::CrossEntropy>::setVerboseStep(int value);
 
             template
-            void AbstractTrainer<Optimizer::Momentum>::setVerboseStep(int value);
+            void AbstractTrainer<Optimizer::Momentum, Cost::CrossEntropy>::setVerboseStep(int value);
 
             template
-            void AbstractTrainer<Optimizer::Nesterov>::setVerboseStep(int value);
+            void AbstractTrainer<Optimizer::Nesterov, Cost::CrossEntropy>::setVerboseStep(int value);
 
             template
-            void AbstractTrainer<Optimizer::Rmsprop>::setVerboseStep(int value);
+            void AbstractTrainer<Optimizer::Rmsprop, Cost::CrossEntropy>::setVerboseStep(int value);
 
-            template<typename OPTIMIZER_TYPE>
-            Impulse::NeuralNetwork::Trainer::CostGradientResult
-            AbstractTrainer<OPTIMIZER_TYPE>::cost(Impulse::Dataset::SlicedDataset &dataSet, bool rollGradient) {
-                Eigen::MatrixXd predictedOutput = this->network.forward(dataSet.getInput());
-                Eigen::MatrixXd correctOutput = dataSet.getOutput();
-                double epsilon = 1e-8;
-                double size = correctOutput.cols();
-                Eigen::MatrixXd logPredictions = (predictedOutput.array().cwiseMax(epsilon)).log();
-                double cost = ((correctOutput.array() * logPredictions.array()).sum()) / size;
-
-                Impulse::NeuralNetwork::Trainer::CostGradientResult result;
-                result.cost = -cost;
-                result.accuracy = 0;
-                if (rollGradient) {
-                    result.gradient = this->network.getRolledGradient();
-                }
-
-                return result;
-            }
-
-            template
-            Impulse::NeuralNetwork::Trainer::CostGradientResult
-            AbstractTrainer<Optimizer::Adam>::cost(Impulse::Dataset::SlicedDataset &dataSet, bool rollGradient);
-
-            template
-            Impulse::NeuralNetwork::Trainer::CostGradientResult
-            AbstractTrainer<Optimizer::Adadelta>::cost(Impulse::Dataset::SlicedDataset &dataSet, bool rollGradient);
-
-            template
-            Impulse::NeuralNetwork::Trainer::CostGradientResult
-            AbstractTrainer<Optimizer::Adagrad>::cost(Impulse::Dataset::SlicedDataset &dataSet, bool rollGradient);
-
-            template
-            Impulse::NeuralNetwork::Trainer::CostGradientResult
-            AbstractTrainer<Optimizer::GradientDescent>::cost(Impulse::Dataset::SlicedDataset &dataSet,
-                                                              bool rollGradient);
-
-            template
-            Impulse::NeuralNetwork::Trainer::CostGradientResult
-            AbstractTrainer<Optimizer::Momentum>::cost(Impulse::Dataset::SlicedDataset &dataSet, bool rollGradient);
-
-            template
-            Impulse::NeuralNetwork::Trainer::CostGradientResult
-            AbstractTrainer<Optimizer::Nesterov>::cost(Impulse::Dataset::SlicedDataset &dataSet, bool rollGradient);
-
-            template
-            Impulse::NeuralNetwork::Trainer::CostGradientResult
-            AbstractTrainer<Optimizer::Rmsprop>::cost(Impulse::Dataset::SlicedDataset &dataSet, bool rollGradient);
-
-            template<typename OPTIMIZER_TYPE>
-            void AbstractTrainer<OPTIMIZER_TYPE>::setStepCallback(std::function<void()> callback) {
+            template<typename OPTIMIZER_TYPE, typename COST_TYPE>
+            void AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>::setStepCallback(std::function<void()> callback) {
                 this->stepCallback = callback;
                 this->stepCallbackSet = true;
             }
 
             template
-            void AbstractTrainer<Optimizer::Adam>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Adam, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
 
             template
-            void AbstractTrainer<Optimizer::Nesterov>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Nesterov, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
 
             template
-            void AbstractTrainer<Optimizer::Adadelta>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Adadelta, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
 
             template
-            void AbstractTrainer<Optimizer::Rmsprop>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Rmsprop, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
 
             template
-            void AbstractTrainer<Optimizer::Momentum>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Momentum, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
 
             template
-            void AbstractTrainer<Optimizer::GradientDescent>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::GradientDescent,
+                Cost::CrossEntropy>::setStepCallback(std::function<void()>);
 
             template
-            void AbstractTrainer<Optimizer::Adagrad>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Adagrad, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
         }
     }
 }

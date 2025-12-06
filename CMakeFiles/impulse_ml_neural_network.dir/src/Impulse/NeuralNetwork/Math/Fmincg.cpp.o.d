@@ -598,12 +598,11 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.c
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Layer/Abstract.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Layer/Abstract1D.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Layer/Abstract3D.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Network/Abstract.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Network/ConvNetwork.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Network/ClassifierNetwork.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Network/Network.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Builder/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Trainer/Cost/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Trainer/Cost/CrossEntropy.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Builder/ClassifierBuilder.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Builder/ConvBuilder.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Serializer.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Layer/Tanh.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Math/../Layer/Softmax.h \

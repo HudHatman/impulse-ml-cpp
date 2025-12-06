@@ -32,70 +32,31 @@ namespace Impulse {
             };
 
             template
-            class Abstract<Network::ClassifierNetwork>;
-
-            template
-            class Abstract<Network::ConvNetwork>;
+            class Abstract<Network::Network>;
 
             template void
-            Abstract<Network::ClassifierNetwork>::createLayer<Layer::Logistic>(
+            Abstract<Network::Network>::createLayer<Layer::Logistic>(
                 std::function<void(Layer::Logistic *)> callback);
 
             template void
-            Abstract<Network::ClassifierNetwork>::createLayer<Layer::Purelin>(
+            Abstract<Network::Network>::createLayer<Layer::Purelin>(
                 std::function<void(Layer::Purelin *)> callback);
 
             template void
-            Abstract<Network::ClassifierNetwork>::createLayer<Layer::Relu>(
+            Abstract<Network::Network>::createLayer<Layer::Relu>(
                 std::function<void(Layer::Relu *)> callback);
 
             template void
-            Abstract<Network::ClassifierNetwork>::createLayer<Layer::Tanh>(
+            Abstract<Network::Network>::createLayer<Layer::Tanh>(
                 std::function<void(Layer::Tanh *)> callback);
 
             template void
-            Abstract<Network::ClassifierNetwork>::createLayer<Layer::Softmax>(
+            Abstract<Network::Network>::createLayer<Layer::Softmax>(
                 std::function<void(Layer::Softmax *)> callback);
 
             template void
-            Abstract<Network::ClassifierNetwork>::createLayer<Layer::Softplus>(
+            Abstract<Network::Network>::createLayer<Layer::Softplus>(
                 std::function<void(Layer::Softplus *)> callback);
-
-            template void
-            Abstract<Network::ConvNetwork>::createLayer<Layer::Conv>(
-                std::function<void(Layer::Conv *)> callback);
-
-            template void
-            Abstract<Network::ConvNetwork>::createLayer<Layer::MaxPool>(
-                std::function<void(Layer::MaxPool *)> callback);
-
-            template void
-            Abstract<Network::ConvNetwork>::createLayer<Layer::FullyConnected>(
-                std::function<void(Layer::FullyConnected *)> callback);
-
-            template void
-            Abstract<Network::ConvNetwork>::createLayer<Layer::Softmax>(
-                std::function<void(Layer::Softmax *)> callback);
-
-            template void
-            Abstract<Network::ConvNetwork>::createLayer<Layer::Softplus>(
-                std::function<void(Layer::Softplus *)> callback);
-
-            template void
-            Abstract<Network::ConvNetwork>::createLayer<Layer::Logistic>(
-                std::function<void(Layer::Logistic *)> callback);
-
-            template void
-            Abstract<Network::ConvNetwork>::createLayer<Layer::Relu>(
-                std::function<void(Layer::Relu *)> callback);
-
-            template void
-            Abstract<Network::ConvNetwork>::createLayer<Layer::Purelin>(
-                std::function<void(Layer::Purelin *)> callback);
-
-            template void
-            Abstract<Network::ConvNetwork>::createLayer<Layer::Tanh>(
-                std::function<void(Layer::Tanh *)> callback);
 
             template<class NETWORK_TYPE>
             NETWORK_TYPE &Abstract<NETWORK_TYPE>::getNetwork() {

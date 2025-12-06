@@ -5,29 +5,28 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Trainer {
-
-            template<class OPTIMIZER_TYPE>
+            template<class OPTIMIZER_TYPE, class COST_TYPE>
             class AbstractTrainer {
             protected:
-                Network::Abstract network;                      // network to train
-                double regularization = 0.0;                    // regularization (lambda) parameters
-                T_Size learningIterations = 1000;               // number of learning iterations
-                double learningRate = 0.1;                      // learning rate
-                bool verbose = true;                            // if display messages
-                int verboseStep = 100;                          // step for displaying messages
-                OPTIMIZER_TYPE *optimizer = nullptr;            // optimizer
-                std::function<void()> stepCallback;             // step callback
-                bool stepCallbackSet = false;                   // just flag
+                Network::Network network; // network to train
+                double regularization = 0.0; // regularization (lambda) parameters
+                T_Size learningIterations = 1000; // number of learning iterations
+                double learningRate = 0.1; // learning rate
+                bool verbose = true; // if display messages
+                int verboseStep = 100; // step for displaying messages
+                OPTIMIZER_TYPE *optimizer = nullptr; // optimizer
+                std::function<void()> stepCallback; // step callback
+                bool stepCallbackSet = false; // just flag
             public:
+                COST_TYPE *cost = nullptr; // cost function
+
                 /**
                  * Constructor.
                  * @param net
                  */
-                explicit AbstractTrainer(Network::Abstract &net);
+                explicit AbstractTrainer(Network::Network &net);
 
                 /**
                  * Sets regularization (lambda) parameters.
@@ -58,13 +57,6 @@ namespace Impulse {
                  * @param value
                  */
                 void setVerboseStep(int value);
-
-                /**
-                 * Computes error, accuracy and gradient for given dataset.
-                 * @param dataSet
-                 * @return
-                 */
-                CostGradientResult cost(Impulse::Dataset::SlicedDataset &dataSet, bool rollGradient = false);
 
                 /**
                  * Trains network with given dataset.

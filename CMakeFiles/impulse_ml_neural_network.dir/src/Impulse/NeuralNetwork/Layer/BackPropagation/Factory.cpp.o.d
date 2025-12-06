@@ -598,12 +598,11 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPro
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Layer/Abstract.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Layer/Abstract1D.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Layer/Abstract3D.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Network/Abstract.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Network/ConvNetwork.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Network/ClassifierNetwork.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Network/Network.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Builder/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Trainer/Cost/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Trainer/Cost/CrossEntropy.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Builder/ClassifierBuilder.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Builder/ConvBuilder.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Serializer.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Layer/Tanh.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/BackPropagation/../../Layer/Softmax.h \

@@ -10,12 +10,12 @@ namespace Impulse {
 
         namespace Trainer {
 
-            template<class OPTIMIZER_TYPE>
-            class MiniBatch : public AbstractTrainer<OPTIMIZER_TYPE> {
+            template<class OPTIMIZER_TYPE, class COST_TYPE>
+            class MiniBatch : public AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE> {
             protected:
                 T_Size batchSize = 100;
             public:
-                explicit MiniBatch<OPTIMIZER_TYPE>(Network::Abstract &net);
+                explicit MiniBatch<OPTIMIZER_TYPE, COST_TYPE>(Network::Network &net);
 
                 void setBatchSize(T_Size value);
 

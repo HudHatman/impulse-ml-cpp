@@ -10,7 +10,7 @@ namespace Impulse {
 
         namespace Builder {
 
-            class ClassifierBuilder : public Abstract<Network::ClassifierNetwork> {
+            class ClassifierBuilder : public Abstract<Network::Network> {
             protected:
             public:
                 explicit ClassifierBuilder(T_Dimension dims);

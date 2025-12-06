@@ -4,7 +4,6 @@ impulse_ml_neural_network: \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
   CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/Abstract.cpp.o \
   CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp.o \
-  CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o \
   CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o \
   CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o \
   CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation3DTo1D.cpp.o \
@@ -25,9 +24,7 @@ impulse_ml_neural_network: \
   CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/Tanh.cpp.o \
   CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.o \
   CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o \
-  CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o \
-  CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o \
-  CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o \
+  CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o \
   CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o \
   CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adadelta.cpp.o \
   CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o \
@@ -100,8 +97,6 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/Abstr
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp.o:
 
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o:
-
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp.o:
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp.o:
@@ -142,11 +137,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.c
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/Fmincg.cpp.o:
 
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o:
-
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o:
-
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o:
+CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o:
 
 CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Abstract.cpp.o:
 

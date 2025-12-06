@@ -85,12 +85,12 @@ clean: CMakeFiles/impulse_ml_neural_network.dir/clean
 CMakeFiles/impulse_ml_neural_network.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Built target impulse_ml_neural_network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58 "Built target impulse_ml_neural_network"
 .PHONY : CMakeFiles/impulse_ml_neural_network.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/impulse_ml_neural_network.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/impulse_ml_neural_network.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles 0
 .PHONY : CMakeFiles/impulse_ml_neural_network.dir/rule
@@ -102,7 +102,7 @@ impulse_ml_neural_network: CMakeFiles/impulse_ml_neural_network.dir/rule
 # codegen rule for target.
 CMakeFiles/impulse_ml_neural_network.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Finished codegen for target impulse_ml_neural_network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anonymous/PROJEKTY/impulse-ml-neural-network/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58 "Finished codegen for target impulse_ml_neural_network"
 .PHONY : CMakeFiles/impulse_ml_neural_network.dir/codegen
 
 # clean rule for target.

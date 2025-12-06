@@ -8,38 +8,38 @@ namespace Impulse {
 
         namespace Trainer {
 
-            template<typename OPTIMIZER_TYPE>
-            MiniBatch<OPTIMIZER_TYPE>::MiniBatch(Network::Abstract &net) : AbstractTrainer<OPTIMIZER_TYPE>(net) {}
+            template<typename OPTIMIZER_TYPE, typename COST_TYPE>
+            MiniBatch<OPTIMIZER_TYPE, COST_TYPE>::MiniBatch(Network::Network &net) : AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>(net) {}
 
             template
-            MiniBatch<Optimizer::GradientDescent>::MiniBatch(Network::Abstract &net);
+            MiniBatch<Optimizer::GradientDescent, Cost::CrossEntropy>::MiniBatch(Network::Network &net);
 
             template
-            MiniBatch<Optimizer::Adam>::MiniBatch(Network::Abstract &net);
+            MiniBatch<Optimizer::Adam, Cost::CrossEntropy>::MiniBatch(Network::Network &net);
 
             template
-            MiniBatch<Optimizer::Adagrad>::MiniBatch(Network::Abstract &net);
+            MiniBatch<Optimizer::Adagrad, Cost::CrossEntropy>::MiniBatch(Network::Network &net);
 
             template
-            MiniBatch<Optimizer::Momentum>::MiniBatch(Network::Abstract &net);
+            MiniBatch<Optimizer::Momentum, Cost::CrossEntropy>::MiniBatch(Network::Network &net);
 
             template
-            MiniBatch<Optimizer::Nesterov>::MiniBatch(Network::Abstract &net);
+            MiniBatch<Optimizer::Nesterov, Cost::CrossEntropy>::MiniBatch(Network::Network &net);
 
             template
-            MiniBatch<Optimizer::Rmsprop>::MiniBatch(Network::Abstract &net);
+            MiniBatch<Optimizer::Rmsprop, Cost::CrossEntropy>::MiniBatch(Network::Network &net);
 
             template
-            MiniBatch<Optimizer::Adadelta>::MiniBatch(Network::Abstract &net);
+            MiniBatch<Optimizer::Adadelta, Cost::CrossEntropy>::MiniBatch(Network::Network &net);
 
-            template<typename OPTIMIZER_TYPE>
-            void MiniBatch<OPTIMIZER_TYPE>::setBatchSize(T_Size value) {
+            template<typename OPTIMIZER_TYPE, typename COST_TYPE>
+            void MiniBatch<OPTIMIZER_TYPE, COST_TYPE>::setBatchSize(T_Size value) {
                 this->batchSize = value;
                 this->optimizer->setBatchSize(value);
             }
 
-            template<typename OPTIMIZER_TYPE>
-            void MiniBatch<OPTIMIZER_TYPE>::train(Impulse::Dataset::SlicedDataset &dataSet) {
+            template<typename OPTIMIZER_TYPE, typename COST_TYPE>
+            void MiniBatch<OPTIMIZER_TYPE, COST_TYPE>::train(Impulse::Dataset::SlicedDataset &dataSet) {
                 auto numberOfExamples = (T_Size) dataSet.getInput().cols();
                 high_resolution_clock::time_point beginTrain = high_resolution_clock::now();
 
@@ -77,14 +77,12 @@ namespace Impulse {
                     }
 
                     if (this->verbose) {
-                        Trainer::CostGradientResult currentResult = this->cost(dataSet);
-
                         if ((i + 1) % this->verboseStep == 0) {
                             high_resolution_clock::time_point endIteration = high_resolution_clock::now();
                             auto duration = duration_cast<milliseconds>(endIteration - beginIteration).count();
                             std::cout << "Iteration: " << (i + 1)
-                                      << " | Cost: " << currentResult.getCost()
-                                      << " | Accuracy: " << currentResult.getAccuracy()
+                                      << " | Cost: " << this->cost->loss(dataSet.getInput(), dataSet.getOutput())
+                                      << " | Accuracy: " << this->cost->accuracy(dataSet.getInput(), dataSet.getOutput())
                                       << "% | Time: " << duration << "ms"
                                       << std::endl;
                         }

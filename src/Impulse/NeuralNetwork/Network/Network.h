@@ -5,21 +5,19 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Network {
-
             typedef std::vector<Layer::LayerPointer> LayersContainer;
 
-            class Abstract {
+            class Network {
             protected:
                 T_Size size = 0;
                 T_Dimension dimension;
+
             public:
                 LayersContainer layers;
 
-                explicit Abstract(T_Dimension dim);
+                explicit Network(T_Dimension dim);
 
                 void addLayer(Layer::LayerPointer layer);
 

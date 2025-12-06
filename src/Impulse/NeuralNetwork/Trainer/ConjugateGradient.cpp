@@ -8,12 +8,12 @@ namespace Impulse {
 
         namespace Trainer {
 
-            template<class OPTIMIZER_TYPE>
-            ConjugateGradient<OPTIMIZER_TYPE>::ConjugateGradient(Network::Abstract &net)
-                    : AbstractTrainer<OPTIMIZER_TYPE>(net) {}
+            template<class OPTIMIZER_TYPE, class COST_TYPE>
+            ConjugateGradient<OPTIMIZER_TYPE, COST_TYPE>::ConjugateGradient(Network::Network &net)
+                    : AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>(net) {}
 
-            template<class OPTIMIZER_TYPE>
-            void ConjugateGradient<OPTIMIZER_TYPE>::train(Impulse::Dataset::SlicedDataset &dataSet) {
+            template<class OPTIMIZER_TYPE, class COST_TYPE>
+            void ConjugateGradient<OPTIMIZER_TYPE, COST_TYPE>::train(Impulse::Dataset::SlicedDataset &dataSet) {
                 Math::Fmincg minimizer;
                 Eigen::VectorXd theta = this->network.getRolledTheta();
                 double regularization = this->regularization;

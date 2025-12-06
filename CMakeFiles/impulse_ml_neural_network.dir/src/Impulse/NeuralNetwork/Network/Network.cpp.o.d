@@ -1,7 +1,7 @@
-CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp.o: \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Optimizer/Adagrad.cpp \
+CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o: \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/Network.cpp \
  /usr/include/stdc-predef.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../include.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../include.h \
  /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -511,7 +511,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/json/src/json.hpp \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/json/src/json.hpp \
  /usr/include/c++/15/ciso646 /usr/include/c++/15/iomanip \
  /usr/include/c++/15/locale \
  /usr/include/c++/15/bits/locale_facets_nonio.h /usr/include/c++/15/ctime \
@@ -546,7 +546,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
  /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
  /usr/include/c++/15/bits/fstream.tcc \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/include.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/include.h \
  /usr/include/c++/15/cstdarg /usr/include/c++/15/random \
  /usr/include/c++/15/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/opt_random.h \
@@ -565,64 +565,64 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
  /usr/include/c++/15/bits/regex.h /usr/include/c++/15/bits/regex.tcc \
  /usr/include/c++/15/bits/regex_executor.h \
  /usr/include/c++/15/bits/regex_executor.tcc \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../common.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Math/common.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../utils.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/common.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../AbstractComputation.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../ComputationCpu.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Computation.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/BackPropagation/Abstract.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/BackPropagation/BackPropagation1DTo1D.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/BackPropagation/BackPropagationToMaxPool.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/BackPropagation/BackPropagationToConv.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/BackPropagation/BackPropagation3DTo1D.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/BackPropagation/Factory.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/types.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/Abstract.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/Abstract1D.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/Abstract3D.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Network/Network.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Builder/Abstract.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Cost/Abstract.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Cost/CrossEntropy.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Builder/ClassifierBuilder.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Serializer.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/Tanh.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/Softmax.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/Relu.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/Logistic.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/Purelin.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/Conv.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/MaxPool.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/FullyConnected.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Layer/Softplus.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Math/Fmincg.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Optimizer/Abstract.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Optimizer/Adam.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Optimizer/Adadelta.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Optimizer/Adagrad.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Optimizer/GradientDescent.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Optimizer/Momentum.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Optimizer/Nesterov.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Optimizer/Rmsprop.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Abstract.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/ConjugateGradient.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/Stochastic.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/../Trainer/MiniBatch.h
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/common.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetSample.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dataset.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetBuilder/CSVBuilder.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSlicer.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/DatasetSplitter.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Callback.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/Category.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/CategoryId.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MinMaxScaling.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/MissingData.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetModifier/Modifier/ZScoresScaling.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/DatasetExporter.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../../../Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../common.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Math/common.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../utils.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/common.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../AbstractComputation.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../ComputationCpu.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Computation.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/BackPropagation/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/BackPropagation/BackPropagation1DTo1D.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/BackPropagation/BackPropagationToMaxPool.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/BackPropagation/BackPropagationToConv.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/BackPropagation/BackPropagation3DTo1D.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/BackPropagation/Factory.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/types.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/Abstract1D.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/Abstract3D.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Network/Network.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Builder/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Cost/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Cost/CrossEntropy.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Builder/ClassifierBuilder.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Serializer.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/Tanh.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/Softmax.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/Relu.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/Logistic.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/Purelin.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/Conv.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/MaxPool.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/FullyConnected.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Layer/Softplus.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Math/Fmincg.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Optimizer/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Optimizer/Adam.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Optimizer/Adadelta.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Optimizer/Adagrad.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Optimizer/GradientDescent.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Optimizer/Momentum.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Optimizer/Nesterov.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Optimizer/Rmsprop.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Abstract.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/ConjugateGradient.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/Stochastic.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Network/../Trainer/MiniBatch.h

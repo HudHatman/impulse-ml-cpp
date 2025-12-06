@@ -1,3 +1,4 @@
+#define EIGEN_USE_OPENMP
 #define EIGEN_USE_BLAS
 #define EIGEN_USE_THREADS
 /*
@@ -57,7 +58,7 @@ SlicedDataset getMnistTestDataset() {
     return slicedDataset;
 }
 
-void conv_mnist() {
+/*void conv_mnist() {
     SlicedDataset dataset = getMnistDataset();
     SlicedDataset testDataset = getMnistTestDataset();
 
@@ -105,17 +106,16 @@ void conv_mnist() {
 
     Network::ConvNetwork net = builder.getNetwork();
 
-    Trainer::MiniBatch<Trainer::Optimizer::Adagrad> trainer(net);
+    Trainer::MiniBatch<Trainer::Optimizer::Adagrad, Trainer::Cost::CrossEntropy> trainer(net);
     trainer.setLearningIterations(10);
     trainer.setVerboseStep(1);
     trainer.setRegularization(0.1);
     trainer.setVerbose(true);
     trainer.setLearningRate(0.005);
     trainer.setStepCallback([&trainer, &testDataset]() {
-        Trainer::CostGradientResult cost = trainer.cost(testDataset);
         std::cout << "___STEP___" << std::endl;
-        std::cout << "Cost: " << cost.getCost() << std::endl;
-        std::cout << "Accuracy: " << cost.getAccuracy() << "%" << std::endl;
+        std::cout << "Cost: " << trainer.cost->loss(testDataset.getInput(), testDataset.getOutput()) << std::endl;
+        std::cout << "Accuracy: " << trainer.cost->accuracy(testDataset.getInput(), testDataset.getOutput()) << "%" << std::endl;
     });
 
     //Trainer::CostGradientResult cost = trainer.cost(dataset);
@@ -141,7 +141,7 @@ void conv_mnist() {
 
     Serializer serializer(net);
     serializer.toJSON("../saved/test_conv_mnist.json");
-}
+}*/
 
 void mnist_minibatch_gradient_descent() {
     std::cout << "started." << std::endl;
@@ -158,25 +158,23 @@ void mnist_minibatch_gradient_descent() {
         layer->setSize(10);
     });
 
-    Network::ClassifierNetwork net = builder.getNetwork();
+    Network::Network net = builder.build();
 
-    Trainer::MiniBatch<Trainer::Optimizer::Adagrad> trainer(net);
+    Trainer::MiniBatch<Trainer::Optimizer::Adagrad, Trainer::Cost::CrossEntropy> trainer(net);
     trainer.setLearningIterations(3);
     trainer.setVerboseStep(1);
     trainer.setRegularization(0.05);
     trainer.setVerbose(true);
     trainer.setLearningRate(0.1);
     trainer.setStepCallback([&trainer, &testDataset]() {
-        Trainer::CostGradientResult cost = trainer.cost(testDataset);
         std::cout << "___STEP___" << std::endl;
-        std::cout << "Cost: " << cost.getCost() << std::endl;
-        std::cout << "Accuracy: " << cost.getAccuracy() << "%" << std::endl;
+        std::cout << "Cost: " << trainer.cost->loss(testDataset.getInput(), testDataset.getOutput()) << std::endl;
+        std::cout << "Accuracy: " << trainer.cost->accuracy(testDataset.getInput(), testDataset.getOutput()) << "%" << std::endl;
     });
 
     std::cout << "calculating cost." << std::endl;
-    Trainer::CostGradientResult cost = trainer.cost(dataset);
-    std::cout << "Cost: " << cost.getCost() << std::endl;
-    std::cout << "Accuracy: " << cost.getAccuracy() << "%" << std::endl;
+    std::cout << "Cost: " << trainer.cost->loss(testDataset.getInput(), testDataset.getOutput()) << std::endl;
+    std::cout << "Accuracy: " << trainer.cost->accuracy(testDataset.getInput(), testDataset.getOutput()) << "%" << std::endl;
     std::cout << "Forward:" << std::endl << net.forward(dataset.input.getSampleAt(0)->exportToEigen()) << std::endl;
 
     std::cout << "starting training." << std::endl;
@@ -191,8 +189,8 @@ void mnist_minibatch_gradient_descent() {
     high_resolution_clock::time_point t4 = high_resolution_clock::now();
     auto duration2 = duration_cast<microseconds>(t4 - t3).count();
     std::cout << "Forward time: " << duration2 << " microseconds." << std::endl;
-    std::cout << "Cost: " << trainer.cost(dataset).getCost() << std::endl;
-    std::cout << "Accuracy: " << trainer.cost(dataset).getAccuracy() << "%" << std::endl;
+    std::cout << "Cost: " << trainer.cost->loss(dataset.getInput(), dataset.getOutput()) << std::endl;
+    std::cout << "Accuracy: " << trainer.cost->accuracy(dataset.getInput(), dataset.getOutput()) << "%" << std::endl;
 
     Serializer serializer(net);
     serializer.toJSON("../saved/test_mnist_minibatch_gradient_descent.json");
@@ -200,7 +198,7 @@ void mnist_minibatch_gradient_descent() {
 
 void mnist_minibatch_gradient_descent_restore() {
     Builder::ClassifierBuilder builder = Builder::ClassifierBuilder::fromJSON("../saved/test_mnist_minibatch_gradient_descent.json");
-    Network::ClassifierNetwork network = builder.getNetwork();
+    Network::Network network = builder.getNetwork();
 
     Impulse::Dataset::DatasetBuilder::CSVBuilder datasetBuilder1(
             "../data/mnist_test_1000.csv");
@@ -233,6 +231,7 @@ void test_lstm() {
 }
 
 int main() {
+    Eigen::setNbThreads(6);
     mnist_minibatch_gradient_descent();
     //mnist_minibatch_gradient_descent_restore();
     //conv_mnist();

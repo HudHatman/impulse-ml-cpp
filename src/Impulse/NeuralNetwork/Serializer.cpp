@@ -4,7 +4,7 @@ namespace Impulse {
 
     namespace NeuralNetwork {
 
-        Serializer::Serializer(Network::Abstract &net) : network(net) {}
+        Serializer::Serializer(Network::Network &net) : network(net) {}
 
         void Serializer::toJSON(T_String path) {
             nlohmann::json result;

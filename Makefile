@@ -225,30 +225,6 @@ src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp.s
 .PHONY : src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp.s
 
-src/Impulse/NeuralNetwork/Builder/ConvBuilder.o: src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o
-.PHONY : src/Impulse/NeuralNetwork/Builder/ConvBuilder.o
-
-# target to build an object file
-src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o
-.PHONY : src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.o
-
-src/Impulse/NeuralNetwork/Builder/ConvBuilder.i: src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.i
-.PHONY : src/Impulse/NeuralNetwork/Builder/ConvBuilder.i
-
-# target to preprocess a source file
-src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.i
-.PHONY : src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.i
-
-src/Impulse/NeuralNetwork/Builder/ConvBuilder.s: src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.s
-.PHONY : src/Impulse/NeuralNetwork/Builder/ConvBuilder.s
-
-# target to generate assembly for a file
-src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.s
-.PHONY : src/Impulse/NeuralNetwork/Builder/ConvBuilder.cpp.s
-
 src/Impulse/NeuralNetwork/Computation.o: src/Impulse/NeuralNetwork/Computation.cpp.o
 .PHONY : src/Impulse/NeuralNetwork/Computation.o
 
@@ -777,77 +753,29 @@ src/Impulse/NeuralNetwork/Math/common.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Math/common.cpp.s
 .PHONY : src/Impulse/NeuralNetwork/Math/common.cpp.s
 
-src/Impulse/NeuralNetwork/Network/Abstract.o: src/Impulse/NeuralNetwork/Network/Abstract.cpp.o
-.PHONY : src/Impulse/NeuralNetwork/Network/Abstract.o
+src/Impulse/NeuralNetwork/Network/Network.o: src/Impulse/NeuralNetwork/Network/Network.cpp.o
+.PHONY : src/Impulse/NeuralNetwork/Network/Network.o
 
 # target to build an object file
-src/Impulse/NeuralNetwork/Network/Abstract.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.o
-.PHONY : src/Impulse/NeuralNetwork/Network/Abstract.cpp.o
+src/Impulse/NeuralNetwork/Network/Network.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.o
+.PHONY : src/Impulse/NeuralNetwork/Network/Network.cpp.o
 
-src/Impulse/NeuralNetwork/Network/Abstract.i: src/Impulse/NeuralNetwork/Network/Abstract.cpp.i
-.PHONY : src/Impulse/NeuralNetwork/Network/Abstract.i
-
-# target to preprocess a source file
-src/Impulse/NeuralNetwork/Network/Abstract.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.i
-.PHONY : src/Impulse/NeuralNetwork/Network/Abstract.cpp.i
-
-src/Impulse/NeuralNetwork/Network/Abstract.s: src/Impulse/NeuralNetwork/Network/Abstract.cpp.s
-.PHONY : src/Impulse/NeuralNetwork/Network/Abstract.s
-
-# target to generate assembly for a file
-src/Impulse/NeuralNetwork/Network/Abstract.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Abstract.cpp.s
-.PHONY : src/Impulse/NeuralNetwork/Network/Abstract.cpp.s
-
-src/Impulse/NeuralNetwork/Network/ClassifierNetwork.o: src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o
-.PHONY : src/Impulse/NeuralNetwork/Network/ClassifierNetwork.o
-
-# target to build an object file
-src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o
-.PHONY : src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.o
-
-src/Impulse/NeuralNetwork/Network/ClassifierNetwork.i: src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.i
-.PHONY : src/Impulse/NeuralNetwork/Network/ClassifierNetwork.i
+src/Impulse/NeuralNetwork/Network/Network.i: src/Impulse/NeuralNetwork/Network/Network.cpp.i
+.PHONY : src/Impulse/NeuralNetwork/Network/Network.i
 
 # target to preprocess a source file
-src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.i
-.PHONY : src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.i
+src/Impulse/NeuralNetwork/Network/Network.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.i
+.PHONY : src/Impulse/NeuralNetwork/Network/Network.cpp.i
 
-src/Impulse/NeuralNetwork/Network/ClassifierNetwork.s: src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.s
-.PHONY : src/Impulse/NeuralNetwork/Network/ClassifierNetwork.s
-
-# target to generate assembly for a file
-src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.s
-.PHONY : src/Impulse/NeuralNetwork/Network/ClassifierNetwork.cpp.s
-
-src/Impulse/NeuralNetwork/Network/ConvNetwork.o: src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o
-.PHONY : src/Impulse/NeuralNetwork/Network/ConvNetwork.o
-
-# target to build an object file
-src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o
-.PHONY : src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.o
-
-src/Impulse/NeuralNetwork/Network/ConvNetwork.i: src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.i
-.PHONY : src/Impulse/NeuralNetwork/Network/ConvNetwork.i
-
-# target to preprocess a source file
-src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.i
-.PHONY : src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.i
-
-src/Impulse/NeuralNetwork/Network/ConvNetwork.s: src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.s
-.PHONY : src/Impulse/NeuralNetwork/Network/ConvNetwork.s
+src/Impulse/NeuralNetwork/Network/Network.s: src/Impulse/NeuralNetwork/Network/Network.cpp.s
+.PHONY : src/Impulse/NeuralNetwork/Network/Network.s
 
 # target to generate assembly for a file
-src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.s
-.PHONY : src/Impulse/NeuralNetwork/Network/ConvNetwork.cpp.s
+src/Impulse/NeuralNetwork/Network/Network.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/impulse_ml_neural_network.dir/build.make CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Network/Network.cpp.s
+.PHONY : src/Impulse/NeuralNetwork/Network/Network.cpp.s
 
 src/Impulse/NeuralNetwork/Serializer.o: src/Impulse/NeuralNetwork/Serializer.cpp.o
 .PHONY : src/Impulse/NeuralNetwork/Serializer.o
@@ -1590,9 +1518,6 @@ help:
 	@echo "... src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.o"
 	@echo "... src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.i"
 	@echo "... src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.s"
-	@echo "... src/Impulse/NeuralNetwork/Builder/ConvBuilder.o"
-	@echo "... src/Impulse/NeuralNetwork/Builder/ConvBuilder.i"
-	@echo "... src/Impulse/NeuralNetwork/Builder/ConvBuilder.s"
 	@echo "... src/Impulse/NeuralNetwork/Computation.o"
 	@echo "... src/Impulse/NeuralNetwork/Computation.i"
 	@echo "... src/Impulse/NeuralNetwork/Computation.s"
@@ -1659,15 +1584,9 @@ help:
 	@echo "... src/Impulse/NeuralNetwork/Math/common.o"
 	@echo "... src/Impulse/NeuralNetwork/Math/common.i"
 	@echo "... src/Impulse/NeuralNetwork/Math/common.s"
-	@echo "... src/Impulse/NeuralNetwork/Network/Abstract.o"
-	@echo "... src/Impulse/NeuralNetwork/Network/Abstract.i"
-	@echo "... src/Impulse/NeuralNetwork/Network/Abstract.s"
-	@echo "... src/Impulse/NeuralNetwork/Network/ClassifierNetwork.o"
-	@echo "... src/Impulse/NeuralNetwork/Network/ClassifierNetwork.i"
-	@echo "... src/Impulse/NeuralNetwork/Network/ClassifierNetwork.s"
-	@echo "... src/Impulse/NeuralNetwork/Network/ConvNetwork.o"
-	@echo "... src/Impulse/NeuralNetwork/Network/ConvNetwork.i"
-	@echo "... src/Impulse/NeuralNetwork/Network/ConvNetwork.s"
+	@echo "... src/Impulse/NeuralNetwork/Network/Network.o"
+	@echo "... src/Impulse/NeuralNetwork/Network/Network.i"
+	@echo "... src/Impulse/NeuralNetwork/Network/Network.s"
 	@echo "... src/Impulse/NeuralNetwork/Serializer.o"
 	@echo "... src/Impulse/NeuralNetwork/Serializer.i"
 	@echo "... src/Impulse/NeuralNetwork/Serializer.s"
