@@ -81,7 +81,7 @@ namespace Impulse {
                             high_resolution_clock::time_point endIteration = high_resolution_clock::now();
                             auto duration = duration_cast<milliseconds>(endIteration - beginIteration).count();
                             std::cout << "Iteration: " << (i + 1)
-                                      << " | Cost: " << this->cost->loss(dataSet.getInput(), dataSet.getOutput())
+                                      << " | Cost: " << this->cost->loss(this->network.forward(dataSet.getInput()), dataSet.getOutput())
                                       << " | Accuracy: " << this->cost->accuracy(dataSet.getInput(), dataSet.getOutput())
                                       << "% | Time: " << duration << "ms"
                                       << std::endl;

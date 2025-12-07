@@ -297,6 +297,7 @@ CMakeFiles/impulse_ml_neural_network.dir/src/Impulse/NeuralNetwork/Trainer/Optim
  /usr/include/c++/15/bits/istream.tcc \
  /usr/include/c++/15/bits/sstream.tcc \
  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/omp.h \
  /usr/include/c++/15/cstddef /usr/include/c++/15/cassert \
  /usr/include/assert.h /usr/include/c++/15/functional \
  /usr/include/c++/15/tuple /usr/include/c++/15/bits/uses_allocator.h \

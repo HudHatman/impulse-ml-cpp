@@ -9,7 +9,7 @@ namespace Impulse {
             namespace Cost {
                 class CrossEntropy final : public Abstract {
                 public:
-                    explicit CrossEntropy(Impulse::NeuralNetwork::Network::Network &network) : Abstract(network) {};
+                    explicit CrossEntropy(Network::Network &network) : Abstract(network) {};
 
                     double loss(Eigen::MatrixXd output, Eigen::MatrixXd predictions) {
                         double miniBatchSize = output.cols();

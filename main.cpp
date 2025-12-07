@@ -1,6 +1,8 @@
 #define EIGEN_USE_OPENMP
 #define EIGEN_USE_BLAS
 #define EIGEN_USE_THREADS
+#define EIGEN_USE_BLAS
+#define EIGEN_USE_GPU
 /*
 #define EIGEN_USE_MKL_ALL
 #define EIGEN_USE_THREADS
@@ -166,14 +168,14 @@ void mnist_minibatch_gradient_descent() {
     trainer.setRegularization(0.05);
     trainer.setVerbose(true);
     trainer.setLearningRate(0.1);
-    trainer.setStepCallback([&trainer, &testDataset]() {
+    trainer.setStepCallback([&trainer, &testDataset, &net]() {
         std::cout << "___STEP___" << std::endl;
-        std::cout << "Cost: " << trainer.cost->loss(testDataset.getInput(), testDataset.getOutput()) << std::endl;
+        std::cout << "Cost: " << trainer.cost->loss(net.forward(testDataset.getInput()), testDataset.getOutput()) << std::endl;
         std::cout << "Accuracy: " << trainer.cost->accuracy(testDataset.getInput(), testDataset.getOutput()) << "%" << std::endl;
     });
 
     std::cout << "calculating cost." << std::endl;
-    std::cout << "Cost: " << trainer.cost->loss(testDataset.getInput(), testDataset.getOutput()) << std::endl;
+    std::cout << "Cost: " << trainer.cost->loss(net.forward(testDataset.getInput()), testDataset.getOutput()) << std::endl;
     std::cout << "Accuracy: " << trainer.cost->accuracy(testDataset.getInput(), testDataset.getOutput()) << "%" << std::endl;
     std::cout << "Forward:" << std::endl << net.forward(dataset.input.getSampleAt(0)->exportToEigen()) << std::endl;
 
@@ -189,7 +191,7 @@ void mnist_minibatch_gradient_descent() {
     high_resolution_clock::time_point t4 = high_resolution_clock::now();
     auto duration2 = duration_cast<microseconds>(t4 - t3).count();
     std::cout << "Forward time: " << duration2 << " microseconds." << std::endl;
-    std::cout << "Cost: " << trainer.cost->loss(dataset.getInput(), dataset.getOutput()) << std::endl;
+    std::cout << "Cost: " << trainer.cost->loss(net.forward(dataset.getInput()), dataset.getOutput()) << std::endl;
     std::cout << "Accuracy: " << trainer.cost->accuracy(dataset.getInput(), dataset.getOutput()) << "%" << std::endl;
 
     Serializer serializer(net);
