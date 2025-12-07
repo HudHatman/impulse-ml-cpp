@@ -1,10 +1,9 @@
-#define EIGEN_USE_OPENMP
-#define EIGEN_USE_BLAS
 #define EIGEN_USE_THREADS
 #define EIGEN_USE_BLAS
-#define EIGEN_USE_GPU
-/*
 #define EIGEN_USE_MKL_ALL
+#define EIGEN_NO_DEBUG
+#define EIGEN_USE_OPENMP
+/*
 #define EIGEN_USE_THREADS
 #define MKL_LP64
 #define EIGEN_USE_BLAS
@@ -152,7 +151,7 @@ void mnist_minibatch_gradient_descent() {
     SlicedDataset testDataset = getMnistTestDataset();
     std::cout << "loaded y." << std::endl;
 
-    Builder::ClassifierBuilder builder({28*28});
+    Builder::Builder builder({28*28});
     builder.createLayer<Layer::Tanh>([](auto * layer) {
         layer->setSize(128);
     });
@@ -199,7 +198,7 @@ void mnist_minibatch_gradient_descent() {
 }
 
 void mnist_minibatch_gradient_descent_restore() {
-    Builder::ClassifierBuilder builder = Builder::ClassifierBuilder::fromJSON("../saved/test_mnist_minibatch_gradient_descent.json");
+    Builder::Builder builder = Builder::Builder::fromJSON("../saved/test_mnist_minibatch_gradient_descent.json");
     Network::Network network = builder.getNetwork();
 
     Impulse::Dataset::DatasetBuilder::CSVBuilder datasetBuilder1(

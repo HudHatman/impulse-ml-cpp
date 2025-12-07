@@ -1,12 +1,10 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
-            Softplus::Softplus() : Abstract1D() {};
+            Softplus::Softplus() : Abstract1D() {
+            };
 
             Eigen::MatrixXd Softplus::activation() {
                 this->computation->softplusActivation();

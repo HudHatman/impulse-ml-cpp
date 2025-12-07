@@ -59,16 +59,13 @@
  */
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Math {
-
             Eigen::VectorXd Fmincg::minimize(
-                    Trainer::StepFunction stepFunction,
-                    Eigen::VectorXd &theta,
-                    T_Size length,
-                    bool verbose
+                Trainer::StepFunction stepFunction,
+                Eigen::VectorXd &theta,
+                T_Size length,
+                bool verbose
             ) {
                 // input will be the pointer to our current active parameter set
                 Eigen::VectorXd input(std::move(theta));
@@ -95,7 +92,8 @@ namespace Impulse {
                 double d1 = (s * -1.0).dot(s); // this is the slope
                 double z1 = red / (1.0 - d1); // initial step is red/(|s|+1)
 
-                while (i < length) { // while not finished
+                while (i < length) {
+                    // while not finished
                     high_resolution_clock::time_point begin = high_resolution_clock::now();
                     i = i + (length > 0 ? 1 : 0); // count iterations?!
                     // make a copy of current values
@@ -208,15 +206,16 @@ namespace Impulse {
                         d2 = df2.dot(s);
                     } // end of line search
 
-                    if (success == 1) { // if line search succeeded
+                    if (success == 1) {
+                        // if line search succeeded
                         f1 = f2;
                         if (verbose) {
                             high_resolution_clock::time_point end = high_resolution_clock::now();
                             auto duration = duration_cast<milliseconds>(end - begin).count();
                             std::cout << "Iteration: " << i
-                                      << " | Error: " << f1
-                                      << " | Time: " << duration
-                                      << std::endl;
+                                    << " | Error: " << f1
+                                    << " | Time: " << duration
+                                    << std::endl;
                         }
                         // Polack-Ribiere direction: s =
                         // (df2'*df2-df1'*df2)/(df1'*df1)*s - df2;

@@ -3,11 +3,8 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             class Abstract1D : public Abstract {
             public:
                 Abstract1D();

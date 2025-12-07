@@ -3,13 +3,9 @@
 #include "../../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             namespace BackPropagation {
-
                 class BackPropagationToConv : public Abstract {
                 public:
                     BackPropagationToConv(Layer::LayerPointer layer, Layer::LayerPointer previousLayer);

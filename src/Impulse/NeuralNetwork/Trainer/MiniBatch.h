@@ -5,15 +5,13 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Trainer {
-
             template<class OPTIMIZER_TYPE, class COST_TYPE>
             class MiniBatch : public AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE> {
             protected:
                 T_Size batchSize = 100;
+
             public:
                 explicit MiniBatch<OPTIMIZER_TYPE, COST_TYPE>(Network::Network &net);
 

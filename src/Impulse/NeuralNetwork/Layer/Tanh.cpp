@@ -1,12 +1,10 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
-            Tanh::Tanh() : Abstract1D() {};
+            Tanh::Tanh() : Abstract1D() {
+            };
 
             Eigen::MatrixXd Tanh::activation() {
                 this->computation->tanhActivation();

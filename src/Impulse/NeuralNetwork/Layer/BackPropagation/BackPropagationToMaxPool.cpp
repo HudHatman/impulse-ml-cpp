@@ -1,21 +1,17 @@
 #include "../../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             namespace BackPropagation {
-
                 BackPropagationToMaxPool::BackPropagationToMaxPool(Layer::LayerPointer layer,
                                                                    Layer::LayerPointer previousLayer) : Abstract(layer,
-                                                                                                                 previousLayer) {}
+                    previousLayer) {
+                }
 
                 Eigen::MatrixXd
                 BackPropagationToMaxPool::propagate(const Eigen::MatrixXd &input, T_Size numberOfExamples,
                                                     double regularization, const Eigen::MatrixXd &sigma) {
-
                     auto *prevLayer = (Layer::MaxPool *) this->previousLayer.get();
                     Eigen::MatrixXd result(prevLayer->getComputation()->getVariable("Z").rows(),
                                            prevLayer->getComputation()->getVariable("Z").cols());
@@ -51,7 +47,7 @@ namespace Impulse {
                                             if (_max < prevLayer->getComputation()->getVariable("Z")(
                                                     inputOffset + (vStart * inputWidth) + hStart, m)) {
                                                 _max = prevLayer->getComputation()->getVariable("Z")(
-                                                        inputOffset + (vStart * inputWidth) + hStart, m);
+                                                    inputOffset + (vStart * inputWidth) + hStart, m);
                                                 maxX = hStart;
                                                 maxY = vStart;
                                             }
@@ -59,7 +55,7 @@ namespace Impulse {
                                     }
 
                                     result(inputOffset + (maxY * inputWidth) + maxX, m) = sigma(
-                                            outputOffset + (h * outputWidth) + w, m);
+                                        outputOffset + (h * outputWidth) + w, m);
                                 }
                             }
                         }

@@ -3,11 +3,8 @@
 #include "include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Utils {
-
             Eigen::MatrixXd im2col(const Eigen::MatrixXd &input, int channels,
                                    int height, int width,
                                    int kernel_h, int kernel_w,

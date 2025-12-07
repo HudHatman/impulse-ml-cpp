@@ -3,13 +3,12 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Trainer {
-
             template<typename OPTIMIZER_TYPE, typename COST_TYPE>
-            MiniBatch<OPTIMIZER_TYPE, COST_TYPE>::MiniBatch(Network::Network &net) : AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>(net) {}
+            MiniBatch<OPTIMIZER_TYPE,
+                COST_TYPE>::MiniBatch(Network::Network &net) : AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>(net) {
+            }
 
             template
             MiniBatch<Optimizer::GradientDescent, Cost::CrossEntropy>::MiniBatch(Network::Network &net);
@@ -69,10 +68,10 @@ namespace Impulse {
                         if (this->verbose) {
                             high_resolution_clock::time_point endIterationBatch = high_resolution_clock::now();
                             auto durationBatch = duration_cast<milliseconds>(
-                                    endIterationBatch - beginIterationBatch).count();
+                                endIterationBatch - beginIterationBatch).count();
                             std::cout << "Batch: " << (offset + 1) << "/" << ceil((double) numberOfExamples / batchSize)
-                                      << " | Time: " << durationBatch << "ms"
-                                      << "\r";
+                                    << " | Time: " << durationBatch << "ms"
+                                    << "\r";
                         }
                     }
 
@@ -81,10 +80,11 @@ namespace Impulse {
                             high_resolution_clock::time_point endIteration = high_resolution_clock::now();
                             auto duration = duration_cast<milliseconds>(endIteration - beginIteration).count();
                             std::cout << "Iteration: " << (i + 1)
-                                      << " | Cost: " << this->cost->loss(this->network.forward(dataSet.getInput()), dataSet.getOutput())
-                                      << " | Accuracy: " << this->cost->accuracy(dataSet.getInput(), dataSet.getOutput())
-                                      << "% | Time: " << duration << "ms"
-                                      << std::endl;
+                                    << " | Cost: " << this->cost->loss(this->network.forward(dataSet.getInput()),
+                                                                       dataSet.getOutput())
+                                    << " | Accuracy: " << this->cost->accuracy(dataSet.getInput(), dataSet.getOutput())
+                                    << "% | Time: " << duration << "ms"
+                                    << std::endl;
                         }
                     }
 

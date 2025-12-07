@@ -5,11 +5,8 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             const T_String TYPE_TANH = "tanh";
 
             class Tanh : public Abstract1D {

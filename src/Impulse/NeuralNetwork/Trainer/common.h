@@ -5,11 +5,8 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Trainer {
-
             struct CostGradientResult {
                 double cost;
                 double accuracy;

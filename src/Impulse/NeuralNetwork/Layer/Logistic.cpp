@@ -1,12 +1,10 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
-            Logistic::Logistic() : Abstract1D() {};
+            Logistic::Logistic() : Abstract1D() {
+            };
 
             Eigen::MatrixXd Logistic::activation() {
                 this->computation->logisticActivation();

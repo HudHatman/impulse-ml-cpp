@@ -5,11 +5,8 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         class ComputationCpu : public AbstractComputation {
-
         private:
             std::map<T_String, Eigen::MatrixXd> variables;
 
@@ -18,7 +15,7 @@ namespace Impulse {
 
             Eigen::MatrixXd &getVariable(T_String);
 
-            void setVariable(T_String, const Eigen::MatrixXd&);
+            void setVariable(T_String, const Eigen::MatrixXd &);
 
             void initialize(T_String);
 

@@ -1,13 +1,9 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Trainer {
-
             namespace Optimizer {
-
                 void Abstract::setBatchSize(T_Size size) {
                     this->batchSize = size;
                 }

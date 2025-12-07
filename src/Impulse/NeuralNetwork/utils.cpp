@@ -1,17 +1,13 @@
 #include "include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Utils {
-
             Eigen::MatrixXd im2col(const Eigen::MatrixXd &input, int channels,
                                    int height, int width,
                                    int kernel_h, int kernel_w,
                                    int pad_h, int pad_w,
                                    int stride_h, int stride_w) {
-
                 int rows = kernel_w * kernel_h * channels;
                 int cols = ((width - kernel_w + 2 * pad_w) / stride_w + 1)
                            *
@@ -35,7 +31,7 @@ namespace Impulse {
                                     if (boundingY + y >= 0 && boundingX + x >= 0 && boundingX + x < width &&
                                         boundingY + y < height) {
                                         result(currentResultRow, currentResultCol) = input(
-                                                ((y + boundingY) * width) + boundingX + x + inputOffset, 0);
+                                            ((y + boundingY) * width) + boundingX + x + inputOffset, 0);
                                     }
                                     currentResultRow++;
                                 }
@@ -51,7 +47,6 @@ namespace Impulse {
                                     int height, int width,
                                     int kernel_h, int kernel_w,
                                     int stride_h, int stride_w) {
-
                 int resultWidth = ((width - kernel_w) / stride_w + 1);
                 int resultHeight = ((height - kernel_h) / stride_h + 1);
                 int resultDepth = channels;

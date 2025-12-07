@@ -3,13 +3,9 @@
 #include "../../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             namespace BackPropagation {
-
                 class BackPropagationToMaxPool : public Abstract {
                 public:
                     BackPropagationToMaxPool(Layer::LayerPointer layer, Layer::LayerPointer previousLayer);

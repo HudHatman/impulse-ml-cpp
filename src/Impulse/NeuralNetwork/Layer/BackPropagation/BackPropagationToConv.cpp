@@ -1,20 +1,16 @@
 #include "../../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             namespace BackPropagation {
-
                 BackPropagationToConv::BackPropagationToConv(Layer::LayerPointer layer,
                                                              Layer::LayerPointer previousLayer) : Abstract(layer,
-                                                                                                           previousLayer) {}
+                    previousLayer) {
+                }
 
                 Eigen::MatrixXd BackPropagationToConv::propagate(const Eigen::MatrixXd &input, T_Size numberOfExamples,
                                                                  double regularization, const Eigen::MatrixXd &sigma) {
-
                     auto *previousLayer = (Layer::Conv *) this->previousLayer.get();
 
                     int padding = previousLayer->getPadding();
@@ -34,7 +30,7 @@ namespace Impulse {
                     Eigen::MatrixXd result(inputWidth * inputHeight * inputDepth, numberOfExamples);
 
                     Eigen::MatrixXd aPrev = previousLayer->derivative(
-                            previousLayer->getComputation()->getVariable("A"));
+                        previousLayer->getComputation()->getVariable("A"));
 
                     previousLayer->getComputation()->setZero("gW");
                     previousLayer->getComputation()->setZero("gB");
@@ -59,37 +55,37 @@ namespace Impulse {
                                                             (inputHeight + 2 * padding)) +
                                                            (vertical * (inputWidth + 2 * padding)) + horizontal), m) +=
                                                         previousLayer->getComputation()->getVariable("W")(c, (d *
-                                                                                                              filterSize *
-                                                                                                              filterSize) +
-                                                                                                             (y *
-                                                                                                              filterSize) +
-                                                                                                             x) *
+                                                                    filterSize *
+                                                                    filterSize) +
+                                                                (y *
+                                                                 filterSize) +
+                                                                x) *
                                                         sigma((c * outputWidth * outputHeight) + (h * outputWidth) + w,
                                                               m);
 
                                                 double z = 0;
                                                 if (padding == 0) {
                                                     z = previousLayer->getComputation()->getVariable("Z")(
-                                                            (d * inputWidth * inputHeight) + (vertical * inputWidth) +
-                                                            horizontal, m);
+                                                        (d * inputWidth * inputHeight) + (vertical * inputWidth) +
+                                                        horizontal, m);
                                                 } else {
                                                     if (verticalPad >= 0 && horizontalPad >= 0 &&
                                                         verticalPad < inputHeight && horizontalPad < inputWidth) {
                                                         z = previousLayer->getComputation()->getVariable("Z")(
-                                                                (d * inputWidth * inputHeight) +
-                                                                (verticalPad * inputWidth) + horizontalPad,
-                                                                m);
+                                                            (d * inputWidth * inputHeight) +
+                                                            (verticalPad * inputWidth) + horizontalPad,
+                                                            m);
                                                     }
                                                 }
 
                                                 previousLayer->getComputation()->getVariable("gW")(c, (d * filterSize *
-                                                                                                       filterSize) +
-                                                                                                      (y * filterSize) +
-                                                                                                      x) +=
+                                                                    filterSize) +
+                                                                (y * filterSize) +
+                                                                x) +=
                                                         (
-                                                                z *
-                                                                sigma(c * (outputWidth * outputHeight) +
-                                                                      (h * outputWidth) + w, m)
+                                                            z *
+                                                            sigma(c * (outputWidth * outputHeight) +
+                                                                  (h * outputWidth) + w, m)
                                                         ) / numberOfExamples;
                                             }
                                         }
@@ -102,15 +98,16 @@ namespace Impulse {
                             }
                         }
 
-                        if (padding > 0) { // unpad
+                        if (padding > 0) {
+                            // unpad
                             for (int c = 0; c < inputDepth; c++) {
                                 for (int h = -padding, y = 0; h < inputHeight + padding; h++, y++) {
                                     for (int w = -padding, x = 0; w < inputWidth + padding; w++, x++) {
                                         if (w >= 0 && h >= 0 && w < inputWidth && h < inputHeight) {
                                             result((c * inputWidth * inputHeight) + (h * inputWidth) + w,
                                                    m) = tmpResult(
-                                                    (c * (inputWidth + 2 * padding) * (inputHeight + 2 * padding)) +
-                                                    (y * (inputWidth + 2 * padding)) + x, m);
+                                                (c * (inputWidth + 2 * padding) * (inputHeight + 2 * padding)) +
+                                                (y * (inputWidth + 2 * padding)) + x, m);
                                         }
                                     }
                                 }

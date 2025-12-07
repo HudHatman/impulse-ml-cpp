@@ -5,17 +5,15 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             const T_String TYPE_MAXPOOL = "maxpool";
 
             class MaxPool : public Abstract3D {
             protected:
                 T_Size filterSize = 2;
                 T_Size stride = 2;
+
             public:
                 MaxPool();
 

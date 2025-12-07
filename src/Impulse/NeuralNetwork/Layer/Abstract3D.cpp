@@ -1,12 +1,10 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
-            Abstract3D::Abstract3D() : Abstract() {}
+            Abstract3D::Abstract3D() : Abstract() {
+            }
 
             bool Abstract3D::is1D() {
                 return false;

@@ -1,13 +1,20 @@
 cmake_minimum_required(VERSION 3.16.3)
 project(impulse_ml_neural_network)
 
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(MKL REQUIRED mkl-dynamic-lp64-iomp)
+
+find_package(OpenMP REQUIRED)
+find_package(Eigen3 REQUIRED)
+
+
 set(CMAKE_CXX_STANDARD 14)
 
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
 
-set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -march=native -fopenmp")
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -march=native -DNDEBUG -flto")
 
 include_directories(src/Impulse/NeuralNetwork)
 include_directories(src/Impulse/NeuralNetwork/Builder)
@@ -27,8 +34,8 @@ include_directories(src/Vendor/json/src)
 add_executable(impulse_ml_neural_network
         src/Impulse/NeuralNetwork/Builder/Abstract.cpp
         src/Impulse/NeuralNetwork/Builder/Abstract.h
-        src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.cpp
-        src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.h
+        src/Impulse/NeuralNetwork/Builder/Builder.cpp
+        src/Impulse/NeuralNetwork/Builder/Builder.h
         src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.cpp
         src/Impulse/NeuralNetwork/Layer/BackPropagation/Abstract.h
         src/Impulse/NeuralNetwork/Layer/BackPropagation/BackPropagation1DTo1D.cpp
@@ -142,3 +149,7 @@ add_executable(impulse_ml_neural_network
         src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/include.h
         src/Vendor/json/src/json.hpp
         main.cpp src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp)
+
+target_link_libraries(impulse_ml_neural_network PRIVATE OpenMP::OpenMP_CXX ${MKL_LIBRARIES} pthread m dl)
+target_include_directories(impulse_ml_neural_network PRIVATE ${MKL_INCLUDE_DIRS})
+target_compile_definitions(impulse_ml_neural_network PRIVATE EIGEN_USE_MKL_ALL)

@@ -3,14 +3,12 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Trainer {
-
             template<class OPTIMIZER_TYPE, class COST_TYPE>
             ConjugateGradient<OPTIMIZER_TYPE, COST_TYPE>::ConjugateGradient(Network::Network &net)
-                    : AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>(net) {}
+                : AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>(net) {
+            }
 
             template<class OPTIMIZER_TYPE, class COST_TYPE>
             void ConjugateGradient<OPTIMIZER_TYPE, COST_TYPE>::train(Impulse::Dataset::SlicedDataset &dataSet) {
@@ -25,12 +23,12 @@ namespace Impulse {
                 this->network.backward(input, output, forward, this->regularization);
 
                 Trainer::StepFunction callback(
-                        [this, &dataSet, &regularization, &input, &output, &forward](Eigen::VectorXd input2) {
-                            this->network.setRolledTheta(input2);
-                            Eigen::MatrixXd forward = this->network.forward(input);
-                            this->network.backward(input, output, forward, regularization);
-                            return this->cost(dataSet, true);
-                        });
+                    [this, &dataSet, &regularization, &input, &output, &forward](Eigen::VectorXd input2) {
+                        this->network.setRolledTheta(input2);
+                        Eigen::MatrixXd forward = this->network.forward(input);
+                        this->network.backward(input, output, forward, regularization);
+                        return this->cost(dataSet, true);
+                    });
 
                 Eigen::VectorXd minimized = minimizer.minimize(callback, theta, this->learningIterations,
                                                                this->verbose);

@@ -38,7 +38,7 @@
 #include "Builder/Abstract.h"
 #include "Trainer/Cost/Abstract.h"
 #include "Trainer/Cost/CrossEntropy.h"
-#include "Builder/ClassifierBuilder.h"
+#include "Builder/Builder.h"
 #include "Serializer.h"
 #include "Layer/Tanh.h"
 #include "Layer/Softmax.h"

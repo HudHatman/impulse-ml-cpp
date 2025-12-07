@@ -9,7 +9,8 @@ namespace Impulse {
             namespace Cost {
                 class CrossEntropy final : public Abstract {
                 public:
-                    explicit CrossEntropy(Network::Network &network) : Abstract(network) {};
+                    explicit CrossEntropy(Network::Network &network) : Abstract(network) {
+                    };
 
                     double loss(Eigen::MatrixXd output, Eigen::MatrixXd predictions) {
                         double miniBatchSize = output.cols();
@@ -18,13 +19,15 @@ namespace Impulse {
 
                         return -cost / miniBatchSize;
                     }
+
                     double accuracy(Eigen::MatrixXd output, Eigen::MatrixXd predictions) {
                         return 0.0;
                     }
 
                     Eigen::MatrixXd derivative(Eigen::MatrixXd output, Eigen::MatrixXd predictions,
                                                Eigen::MatrixXd activationDerivative) {
-                        if (this->network.getLayer(this->network.getSize() - 1)->getType() == Layer::LayerType::Softmax) {
+                        if (this->network.getLayer(this->network.getSize() - 1)->getType() ==
+                            Layer::LayerType::Softmax) {
                             return predictions - output;
                         }
 

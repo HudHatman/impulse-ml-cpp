@@ -1,12 +1,10 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
-            MaxPool::MaxPool() : Abstract3D() {}
+            MaxPool::MaxPool() : Abstract3D() {
+            }
 
             void MaxPool::configure() {
                 // empty configure - no parameters.

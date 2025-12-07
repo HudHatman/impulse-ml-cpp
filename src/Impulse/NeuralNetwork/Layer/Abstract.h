@@ -5,11 +5,8 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             // fwd declarations
             class Abstract;
 
@@ -20,14 +17,16 @@ namespace Impulse {
 
             class Abstract {
             protected:
-                T_Size width;                                                           // number of prev layer size (input)
-                T_Size height;                                                          // number of neurons
-                T_Size depth;                                                           // 3D YEAH
-                Layer::LayerPointer previousLayer = nullptr;                            // pointer to the previous layer in the network
-                Computation *computation = nullptr;                                     // calculating unit
+                T_Size width; // number of prev layer size (input)
+                T_Size height; // number of neurons
+                T_Size depth; // 3D YEAH
+                Layer::LayerPointer previousLayer = nullptr; // pointer to the previous layer in the network
+                Computation *computation = nullptr; // calculating unit
                 bool _isLast = false;
+
             public:
-                BackPropagation::BackPropagationPointer backpropagation = nullptr;      // pointer to the backpropagation algorithm
+                BackPropagation::BackPropagationPointer backpropagation = nullptr;
+                // pointer to the backpropagation algorithm
                 /**
                  * Pure constructor.
                  */
@@ -180,7 +179,8 @@ namespace Impulse {
                 /**
                  * Debug.
                  */
-                virtual void debug() {};
+                virtual void debug() {
+                };
 
                 /**
                  * Calculates penalty.

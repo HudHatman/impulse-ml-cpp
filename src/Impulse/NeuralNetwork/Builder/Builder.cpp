@@ -3,19 +3,16 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Builder {
-
-            ClassifierBuilder::ClassifierBuilder(T_Dimension dims) : Abstract<Network::Network>(dims) {
+            Builder::Builder(T_Dimension dims) : Abstract<Network::Network>(dims) {
             }
 
-            void ClassifierBuilder::firstLayerTransition(Layer::LayerPointer layer) {
+            void Builder::firstLayerTransition(Layer::LayerPointer layer) {
                 layer->setPrevSize(this->dimension.width);
             }
 
-            ClassifierBuilder ClassifierBuilder::fromJSON(T_String path) {
+            Builder Builder::fromJSON(T_String path) {
                 std::ifstream fileStream(path);
                 nlohmann::json jsonFile;
 
@@ -24,11 +21,11 @@ namespace Impulse {
 
                 std::vector<T_Size> inputSize = jsonFile["inputSize"];
 
-                ClassifierBuilder builder({inputSize[0]});
+                Builder builder({inputSize[0]});
 
                 nlohmann::json savedLayers = jsonFile["layers"];
 
-                for (auto &element : savedLayers) {
+                for (auto &element: savedLayers) {
                     T_String layerType = element["type"];
 
                     if (layerType == Layer::TYPE_LOGISTIC ||
@@ -37,7 +34,6 @@ namespace Impulse {
                         layerType == Layer::TYPE_SOFTMAX ||
                         layerType == Layer::TYPE_TANH ||
                         layerType == Layer::TYPE_SOFTPLUS) {
-
                         T_Size size = element["size"];
 
                         if (layerType == Layer::TYPE_LOGISTIC) {

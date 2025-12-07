@@ -36,27 +36,27 @@ namespace Impulse {
 
             template void
             Abstract<Network::Network>::createLayer<Layer::Logistic>(
-                std::function<void(Layer::Logistic *)> callback);
+                std::function < void(Layer::Logistic *) > callback);
 
             template void
             Abstract<Network::Network>::createLayer<Layer::Purelin>(
-                std::function<void(Layer::Purelin *)> callback);
+                std::function < void(Layer::Purelin *) > callback);
 
             template void
             Abstract<Network::Network>::createLayer<Layer::Relu>(
-                std::function<void(Layer::Relu *)> callback);
+                std::function < void(Layer::Relu *) > callback);
 
             template void
             Abstract<Network::Network>::createLayer<Layer::Tanh>(
-                std::function<void(Layer::Tanh *)> callback);
+                std::function < void(Layer::Tanh *) > callback);
 
             template void
             Abstract<Network::Network>::createLayer<Layer::Softmax>(
-                std::function<void(Layer::Softmax *)> callback);
+                std::function < void(Layer::Softmax *) > callback);
 
             template void
             Abstract<Network::Network>::createLayer<Layer::Softplus>(
-                std::function<void(Layer::Softplus *)> callback);
+                std::function < void(Layer::Softplus *) > callback);
 
             template<class NETWORK_TYPE>
             NETWORK_TYPE &Abstract<NETWORK_TYPE>::getNetwork() {

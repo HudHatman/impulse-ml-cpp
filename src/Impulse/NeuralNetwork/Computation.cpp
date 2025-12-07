@@ -1,9 +1,7 @@
 #include "include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         Computation::Computation() : AbstractComputation() {
             this->computation = new ComputationCpu();
         }
@@ -12,7 +10,7 @@ namespace Impulse {
             return this->computation->getVariable(name);
         }
 
-        void Computation::setVariable(T_String name, const Eigen::MatrixXd& variable) {
+        void Computation::setVariable(T_String name, const Eigen::MatrixXd &variable) {
             this->computation->setVariable(name, variable);
         }
 

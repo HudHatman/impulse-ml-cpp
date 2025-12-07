@@ -24,7 +24,7 @@ namespace Impulse {
 
             void
             Network::backward(Eigen::MatrixXd &X, Eigen::MatrixXd &Y, Eigen::MatrixXd &predictions,
-                               double regularization) {
+                              double regularization) {
                 long m = X.cols();
 
                 Eigen::MatrixXd delta = predictions.array() - Y.array();

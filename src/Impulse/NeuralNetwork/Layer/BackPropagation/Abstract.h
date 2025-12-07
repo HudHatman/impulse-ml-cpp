@@ -3,18 +3,14 @@
 #include "../../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             // fwd declarations
             class Abstract;
 
             typedef std::shared_ptr<Abstract> LayerPointer;
 
             namespace BackPropagation {
-
                 // fwd declaration
                 class Abstract;
 
@@ -24,6 +20,7 @@ namespace Impulse {
                 protected:
                     Layer::LayerPointer layer;
                     Layer::LayerPointer previousLayer;
+
                 public:
                     Abstract(Layer::LayerPointer layer, Layer::LayerPointer previousLayer);
 

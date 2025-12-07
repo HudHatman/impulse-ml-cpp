@@ -1,12 +1,10 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
-            Purelin::Purelin() : Abstract1D() {};
+            Purelin::Purelin() : Abstract1D() {
+            };
 
             Eigen::MatrixXd Purelin::activation() {
                 return this->computation->getVariable("Z");

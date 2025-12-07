@@ -10,25 +10,25 @@ namespace Impulse {
             }
 
             template
-            AbstractTrainer<Optimizer::Adam, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
+            AbstractTrainer<Optimizer::Adam, Cost::CrossEntropy>::AbstractTrainer(Network::Network & net);
 
             template
-            AbstractTrainer<Optimizer::Adadelta, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
+            AbstractTrainer<Optimizer::Adadelta, Cost::CrossEntropy>::AbstractTrainer(Network::Network & net);
 
             template
-            AbstractTrainer<Optimizer::Adagrad, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
+            AbstractTrainer<Optimizer::Adagrad, Cost::CrossEntropy>::AbstractTrainer(Network::Network & net);
 
             template
-            AbstractTrainer<Optimizer::GradientDescent, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
+            AbstractTrainer<Optimizer::GradientDescent, Cost::CrossEntropy>::AbstractTrainer(Network::Network & net);
 
             template
-            AbstractTrainer<Optimizer::Momentum, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
+            AbstractTrainer<Optimizer::Momentum, Cost::CrossEntropy>::AbstractTrainer(Network::Network & net);
 
             template
-            AbstractTrainer<Optimizer::Nesterov, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
+            AbstractTrainer<Optimizer::Nesterov, Cost::CrossEntropy>::AbstractTrainer(Network::Network & net);
 
             template
-            AbstractTrainer<Optimizer::Rmsprop, Cost::CrossEntropy>::AbstractTrainer(Network::Network &net);
+            AbstractTrainer<Optimizer::Rmsprop, Cost::CrossEntropy>::AbstractTrainer(Network::Network & net);
 
             template<typename OPTIMIZER_TYPE, typename COST_TYPE>
             void AbstractTrainer<OPTIMIZER_TYPE, COST_TYPE>::setRegularization(double value) {
@@ -168,26 +168,26 @@ namespace Impulse {
             }
 
             template
-            void AbstractTrainer<Optimizer::Adam, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Adam, Cost::CrossEntropy>::setStepCallback(std::function < void() >);
 
             template
-            void AbstractTrainer<Optimizer::Nesterov, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Nesterov, Cost::CrossEntropy>::setStepCallback(std::function < void() >);
 
             template
-            void AbstractTrainer<Optimizer::Adadelta, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Adadelta, Cost::CrossEntropy>::setStepCallback(std::function < void() >);
 
             template
-            void AbstractTrainer<Optimizer::Rmsprop, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Rmsprop, Cost::CrossEntropy>::setStepCallback(std::function < void() >);
 
             template
-            void AbstractTrainer<Optimizer::Momentum, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Momentum, Cost::CrossEntropy>::setStepCallback(std::function < void() >);
 
             template
             void AbstractTrainer<Optimizer::GradientDescent,
-                Cost::CrossEntropy>::setStepCallback(std::function<void()>);
+                Cost::CrossEntropy>::setStepCallback(std::function < void() >);
 
             template
-            void AbstractTrainer<Optimizer::Adagrad, Cost::CrossEntropy>::setStepCallback(std::function<void()>);
+            void AbstractTrainer<Optimizer::Adagrad, Cost::CrossEntropy>::setStepCallback(std::function < void() >);
         }
     }
 }

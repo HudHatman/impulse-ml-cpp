@@ -1,12 +1,10 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
-            Relu::Relu() : Abstract1D() {};
+            Relu::Relu() : Abstract1D() {
+            };
 
             Eigen::MatrixXd Relu::activation() {
                 this->computation->reluActivation();

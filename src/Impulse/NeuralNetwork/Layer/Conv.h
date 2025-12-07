@@ -5,11 +5,8 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             const T_String TYPE_CONV = "conv";
 
             class Conv : public Abstract3D {
@@ -18,6 +15,7 @@ namespace Impulse {
                 T_Size padding = 1;
                 T_Size stride = 2;
                 T_Size numFilters = 2;
+
             public:
                 Conv();
 

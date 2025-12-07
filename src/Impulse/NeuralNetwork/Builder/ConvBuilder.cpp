@@ -4,13 +4,9 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Builder {
-
             ConvBuilder::ConvBuilder(T_Dimension dims) : Abstract<Network::ConvNetwork>(dims) {
-
             }
 
             void ConvBuilder::firstLayerTransition(Layer::LayerPointer layer) {
@@ -37,7 +33,7 @@ namespace Impulse {
 
                 nlohmann::json savedLayers = jsonFile["layers"];
 
-                for (auto &element : savedLayers) {
+                for (auto &element: savedLayers) {
                     T_String layerType = element["type"];
 
                     if (layerType == Layer::TYPE_LOGISTIC ||
@@ -46,7 +42,6 @@ namespace Impulse {
                         layerType == Layer::TYPE_SOFTMAX ||
                         layerType == Layer::TYPE_TANH ||
                         layerType == Layer::TYPE_SOFTPLUS) {
-
                         T_Size size = element["size"];
 
                         if (layerType == Layer::TYPE_LOGISTIC) {

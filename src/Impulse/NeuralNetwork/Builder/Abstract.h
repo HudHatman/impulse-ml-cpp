@@ -5,18 +5,18 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Builder {
-
             template<class NETWORK_TYPE>
             class Abstract {
             protected:
                 NETWORK_TYPE network;
                 T_Dimension dimension;
                 Layer::LayerPointer previousLayer = nullptr;
+
             public:
+                virtual ~Abstract() = default;
+
                 explicit Abstract(T_Dimension dims);
 
                 template<typename LAYER_TYPE>

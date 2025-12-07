@@ -19,11 +19,8 @@ using namespace std::chrono;
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Math {
-
             class Fmincg {
             public:
                 Fmincg() = default;
@@ -39,10 +36,10 @@ namespace Impulse {
                  * @return
                  */
                 Eigen::VectorXd minimize(
-                        Trainer::StepFunction stepFunction,
-                        Eigen::VectorXd &theta,
-                        T_Size length,
-                        bool verbose
+                    Trainer::StepFunction stepFunction,
+                    Eigen::VectorXd &theta,
+                    T_Size length,
+                    bool verbose
                 );
             };
         }

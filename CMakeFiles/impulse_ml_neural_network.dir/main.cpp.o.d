@@ -333,7 +333,26 @@ CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/amxmovrsintrin.h \
  /usr/include/c++/15/complex \
  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
- /usr/include/eigen3/Eigen/src/misc/blas.h \
+ /usr/include/mkl/mkl.h /usr/include/mkl/mkl_version.h \
+ /usr/include/mkl/mkl_types.h /usr/include/mkl/mkl_blas.h \
+ /usr/include/mkl/mkl_trans.h /usr/include/mkl/mkl_cblas.h \
+ /usr/include/mkl/mkl_spblas.h /usr/include/mkl/mkl_lapack.h \
+ /usr/include/mkl/mkl_lapacke.h /usr/include/mkl/mkl_pardiso.h \
+ /usr/include/mkl/mkl_dss.h /usr/include/mkl/mkl_sparse_handle.h \
+ /usr/include/mkl/mkl_rci.h /usr/include/mkl/mkl_service.h \
+ /usr/include/mkl/mkl_vml.h /usr/include/mkl/mkl_vml_defines.h \
+ /usr/include/mkl/mkl_vml_types.h /usr/include/mkl/mkl_vml_functions.h \
+ /usr/include/mkl/mkl_vsl.h /usr/include/mkl/mkl_vsl_defines.h \
+ /usr/include/mkl/mkl_vsl_functions.h /usr/include/mkl/mkl_vsl_types.h \
+ /usr/include/mkl/mkl_df.h /usr/include/mkl/mkl_df_defines.h \
+ /usr/include/mkl/mkl_df_functions.h /usr/include/mkl/mkl_df_types.h \
+ /usr/include/mkl/mkl_dfti.h /usr/include/mkl/mkl_trig_transforms.h \
+ /usr/include/mkl/mkl_poisson.h /usr/include/mkl/mkl_solvers_ee.h \
+ /usr/include/mkl/mkl_direct_call.h /usr/include/mkl/mkl_direct_types.h \
+ /usr/include/c++/15/math.h /usr/include/mkl/mkl_direct_blas.h \
+ /usr/include/mkl/mkl_direct_blas_kernels.h \
+ /usr/include/mkl/mkl_direct_lapack.h /usr/include/mkl/mkl_compact.h \
+ /usr/include/mkl/mkl_graph.h /usr/include/mkl/mkl_sparse_qr.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/omp.h \
  /usr/include/c++/15/cstddef /usr/include/c++/15/cassert \
  /usr/include/assert.h /usr/include/c++/15/functional \
@@ -491,6 +510,7 @@ CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h \
  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h \
  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h \
+ /usr/include/eigen3/Eigen/src/Core/Assign_MKL.h \
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/include.h \
@@ -499,6 +519,8 @@ CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o: \
  /usr/include/eigen3/Eigen/src/misc/Image.h \
  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
+ /usr/include/mkl/mkl_lapacke.h \
+ /usr/include/eigen3/Eigen/src/LU/PartialPivLU_LAPACKE.h \
  /usr/include/eigen3/Eigen/src/LU/Determinant.h \
  /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
  /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
@@ -506,6 +528,7 @@ CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o: \
  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
  /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
  /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
+ /usr/include/eigen3/Eigen/src/Cholesky/LLT_LAPACKE.h \
  /usr/include/eigen3/Eigen/QR /usr/include/eigen3/Eigen/Householder \
  /usr/include/eigen3/Eigen/src/Householder/Householder.h \
  /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
@@ -514,12 +537,15 @@ CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o: \
  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
  /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
  /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+ /usr/include/eigen3/Eigen/src/QR/HouseholderQR_LAPACKE.h \
+ /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h \
  /usr/include/eigen3/Eigen/SVD \
  /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
  /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
  /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+ /usr/include/eigen3/Eigen/src/SVD/JacobiSVD_LAPACKE.h \
  /usr/include/eigen3/Eigen/Geometry \
  /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
  /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
@@ -553,6 +579,9 @@ CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur_LAPACKE.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h \
  /usr/include/c++/15/fstream \
  /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
@@ -624,7 +653,7 @@ CMakeFiles/impulse_ml_neural_network.dir/main.cpp.o: \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/Abstract.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Cost/Abstract.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Trainer/Cost/CrossEntropy.h \
- /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/ClassifierBuilder.h \
+ /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Builder/Builder.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Serializer.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Tanh.h \
  /home/anonymous/PROJEKTY/impulse-ml-neural-network/src/Impulse/NeuralNetwork/Layer/Softmax.h \

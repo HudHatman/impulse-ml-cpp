@@ -3,11 +3,8 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Math {
-
             typedef std::vector<double> T_RawVector;
 
             /**
@@ -15,7 +12,7 @@ namespace Impulse {
              * @param vec
              * @return
              */
-            Math::T_RawVector vectorToRaw(Eigen::VectorXd &vec);
+            Math::T_RawVector vectorToRaw(Eigen::VectorXd & vec);
 
             /**
              * Translates std::vector to Eigen3 vector.

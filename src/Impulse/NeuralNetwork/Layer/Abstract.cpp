@@ -1,11 +1,8 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
             Abstract::Abstract() {
                 this->computation = new Computation();
 

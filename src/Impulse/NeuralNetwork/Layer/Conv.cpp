@@ -1,12 +1,10 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
-            Conv::Conv() : Abstract3D() {}
+            Conv::Conv() : Abstract3D() {
+            }
 
             void Conv::configure() {
                 // initialize weights

@@ -5,19 +5,16 @@
 using namespace Impulse::NeuralNetwork;
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Builder {
-
-            class ClassifierBuilder : public Abstract<Network::Network> {
+            class Builder : public Abstract<Network::Network> {
             protected:
             public:
-                explicit ClassifierBuilder(T_Dimension dims);
+                explicit Builder(T_Dimension dims);
 
                 void firstLayerTransition(Layer::LayerPointer layer) override;
 
-                static ClassifierBuilder fromJSON(T_String path);
+                static Builder fromJSON(T_String path);
             };
         }
     }

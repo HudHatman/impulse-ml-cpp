@@ -3,9 +3,7 @@
 #include "include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         typedef unsigned int T_Size;
         typedef std::string T_String;
 

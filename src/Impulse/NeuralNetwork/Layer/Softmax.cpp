@@ -1,12 +1,10 @@
 #include "../include.h"
 
 namespace Impulse {
-
     namespace NeuralNetwork {
-
         namespace Layer {
-
-            Softmax::Softmax() : Abstract1D() {}
+            Softmax::Softmax() : Abstract1D() {
+            }
 
             Eigen::MatrixXd Softmax::activation() {
                 this->computation->softmaxActivation();
