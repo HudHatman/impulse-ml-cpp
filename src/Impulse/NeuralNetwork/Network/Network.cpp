@@ -12,8 +12,8 @@ namespace Impulse {
                 this->layers.push_back(layer);
             }
 
-            Eigen::MatrixXd Network::forward(const Eigen::MatrixXd &input) {
-                Eigen::MatrixXd output = input;
+            Math::Matrix Network::forward(const Math::Matrix &input) {
+                Math::Matrix output = input;
 
                 for (auto &layer: this->layers) {
                     output = layer->forward(output);
@@ -23,11 +23,11 @@ namespace Impulse {
             }
 
             void
-            Network::backward(Eigen::MatrixXd &X, Eigen::MatrixXd &Y, Eigen::MatrixXd &predictions,
+            Network::backward(Math::Matrix &X, Math::Matrix &Y, Math::Matrix &predictions,
                               double regularization) {
                 long m = X.cols();
 
-                Eigen::MatrixXd delta = predictions.array() - Y.array();
+                Math::Matrix delta = predictions.array() - Y.array();
 
                 for (long i = this->layers.size() - 1; i >= 0; i--) {
                     auto layer = this->layers.at(static_cast<unsigned long>(i));
@@ -131,7 +131,7 @@ namespace Impulse {
                 }
             }
 
-            double Network::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+            double Network::loss(Math::Matrix &output, Math::Matrix &predictions) {
                 return this->layers.at(this->getSize() - 1)->loss(output, predictions);
             }
 

@@ -6,18 +6,18 @@ namespace Impulse {
         }
 
         void ComputationCpu::initialize(T_String name) {
-            this->variables[name] = Eigen::MatrixXd();
+            this->variables[name] = Math::Matrix();
         }
 
         void ComputationCpu::resize(T_String name, T_Size width, T_Size height) {
             this->variables[name].resize(width, height);
         }
 
-        void ComputationCpu::setVariable(T_String name, const Eigen::MatrixXd &variable) {
+        void ComputationCpu::setVariable(T_String name, const Math::Matrix &variable) {
             this->variables[name] = variable;
         }
 
-        Eigen::MatrixXd &ComputationCpu::getVariable(T_String name) {
+        Math::Matrix &ComputationCpu::getVariable(T_String name) {
             return this->variables[name];
         }
 
@@ -30,8 +30,8 @@ namespace Impulse {
             this->variables[name] *= sqrt(2.0 / parameter);
         }
 
-        Eigen::MatrixXd
-        ComputationCpu::forward(const Eigen::MatrixXd &input) {
+        Math::Matrix
+        ComputationCpu::forward(const Math::Matrix &input) {
             this->setVariable("Z", (this->variables["W"] * input) + this->variables["b"].replicate(1, input.cols()));
             return this->getVariable("Z");
         }
@@ -42,7 +42,7 @@ namespace Impulse {
             });
         }
 
-        Eigen::MatrixXd ComputationCpu::reluDerivative(Eigen::MatrixXd &m) {
+        Math::Matrix ComputationCpu::reluDerivative(Math::Matrix &m) {
             return m.unaryExpr([](const double x) {
                 if (x > 0.0) {
                     return 1.0;
@@ -57,22 +57,22 @@ namespace Impulse {
             });
         }
 
-        Eigen::MatrixXd ComputationCpu::logisticDerivative(Eigen::MatrixXd &m) {
+        Math::Matrix ComputationCpu::logisticDerivative(Math::Matrix &m) {
             return (m.array() * (1.0 - m.array())).matrix();
         }
 
         void ComputationCpu::softmaxActivation() {
-            Eigen::MatrixXd t = this->variables["Z"].unaryExpr([](const double x) {
+            Math::Matrix t = this->variables["Z"].unaryExpr([](const double x) {
                 return exp(x);
             });
-            Eigen::MatrixXd divider = t.colwise().sum().replicate(t.rows(), 1);
-            Eigen::MatrixXd result = t.array() / divider.array();
+            Math::Matrix divider = t.colwise().sum().replicate(t.rows(), 1);
+            Math::Matrix result = t.array() / divider.array();
 
             this->variables["A"] = result;
         }
 
-        Eigen::MatrixXd ComputationCpu::softmaxDerivative(Eigen::MatrixXd &) {
-            return Eigen::MatrixXd(); // TODO
+        Math::Matrix ComputationCpu::softmaxDerivative(Math::Matrix &) {
+            return Math::Matrix(); // TODO
         }
 
         void ComputationCpu::softplusActivation() {
@@ -81,8 +81,8 @@ namespace Impulse {
             });
         }
 
-        Eigen::MatrixXd ComputationCpu::softplusDerivative(Eigen::MatrixXd &m) {
-            Eigen::MatrixXd result = m.unaryExpr([](const double x) {
+        Math::Matrix ComputationCpu::softplusDerivative(Math::Matrix &m) {
+            Math::Matrix result = m.unaryExpr([](const double x) {
                 return (1.0 / (1.0 + std::exp(-x)));
             });
             return result;
@@ -92,15 +92,15 @@ namespace Impulse {
             this->variables["A"] = this->variables["Z"].array().tanh();
         }
 
-        Eigen::MatrixXd ComputationCpu::tanhDerivative(Eigen::MatrixXd &m) {
-            Eigen::MatrixXd result = m.unaryExpr([](const double x) {
+        Math::Matrix ComputationCpu::tanhDerivative(Math::Matrix &m) {
+            Math::Matrix result = m.unaryExpr([](const double x) {
                 return 1.0 - std::tanh(x) * std::tanh(x);
             });
             return result;
         }
 
-        double ComputationCpu::logisticLoss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
-            Eigen::MatrixXd loss =
+        double ComputationCpu::logisticLoss(Math::Matrix &output, Math::Matrix &predictions) {
+            Math::Matrix loss =
                     (output.array() * predictions.unaryExpr([](const double x) { return log(x); }).array())
                     +
                     (output.unaryExpr([](const double x) { return 1.0 - x; }).array()
@@ -110,15 +110,15 @@ namespace Impulse {
             return loss.sum();
         }
 
-        double ComputationCpu::purelinLoss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
-            Eigen::MatrixXd loss = (predictions.array() - output.array()).unaryExpr([](const double x) {
+        double ComputationCpu::purelinLoss(Math::Matrix &output, Math::Matrix &predictions) {
+            Math::Matrix loss = (predictions.array() - output.array()).unaryExpr([](const double x) {
                 return pow(x, 2.0);
             });
             return loss.sum();
         }
 
-        double ComputationCpu::softmaxLoss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
-            Eigen::MatrixXd loss = (output.array() *
+        double ComputationCpu::softmaxLoss(Math::Matrix &output, Math::Matrix &predictions) {
+            Math::Matrix loss = (output.array() *
                                     predictions.unaryExpr([](const double x) { return log(x); }).array());
             return loss.sum();
         }
@@ -140,25 +140,25 @@ namespace Impulse {
             double beta2 = 0.999;
             double epsilon = 1e-8;
 
-            Eigen::MatrixXd vW = (beta1 * this->variables["vW"] + ((1 - beta1) * this->variables["gW"]));
+            Math::Matrix vW = (beta1 * this->variables["vW"] + ((1 - beta1) * this->variables["gW"]));
             this->variables["vW"] = vW;
-            Eigen::MatrixXd wCorrected = this->variables["vW"] / (1 - std::pow(beta1, t));
+            Math::Matrix wCorrected = this->variables["vW"] / (1 - std::pow(beta1, t));
 
-            Eigen::MatrixXd cW = (beta2 * this->variables["cW"].array() +
+            Math::Matrix cW = (beta2 * this->variables["cW"].array() +
                                   (1 - beta2) * (this->variables["gW"].array().square()));
             this->variables["cW"] = cW;
 
-            Eigen::MatrixXd sCorrected = this->variables["cW"] / (1 - std::pow(beta2, t));
+            Math::Matrix sCorrected = this->variables["cW"] / (1 - std::pow(beta2, t));
             sCorrected = sCorrected.array().sqrt();
 
             this->variables["W"].array() -= learningRate * (wCorrected.array() / sCorrected.array());
 
             //
-            Eigen::MatrixXd vB = (beta1 * this->variables["vB"] + (1 - beta1) * this->variables["gB"]);
+            Math::Matrix vB = (beta1 * this->variables["vB"] + (1 - beta1) * this->variables["gB"]);
             this->variables["vB"] = vB;
             Eigen::VectorXd wCorrected2 = this->variables["vB"] / (1 - std::pow(beta1, t));
 
-            Eigen::MatrixXd cB = (beta2 * this->variables["cB"].array() +
+            Math::Matrix cB = (beta2 * this->variables["cB"].array() +
                                   (1 - beta2) * (this->variables["gB"].array().square()));
             this->variables["cB"] = cB;
 
@@ -211,7 +211,7 @@ namespace Impulse {
         void ComputationCpu::gradientNesterov(double learningRate, T_Size batchSize) {
             double gamma = 0.9;
 
-            Eigen::MatrixXd s_prev_w = this->variables["cW"];
+            Math::Matrix s_prev_w = this->variables["cW"];
             this->variables["cW"] = (gamma * this->variables["cW"].array()) - (
                                         learningRate * this->variables["gW"].array());
             this->variables["W"].array() += this->variables["cW"].array() + (
@@ -242,7 +242,7 @@ namespace Impulse {
 
             this->variables["cW"] = ((gamma * this->variables["cW"].array()) +
                                      (1.0 - gamma) * (this->variables["gW"].array().square()));
-            Eigen::MatrixXd deltaParameters = -(this->variables["vW"].unaryExpr([epsilon](double x) {
+            Math::Matrix deltaParameters = -(this->variables["vW"].unaryExpr([epsilon](double x) {
                 return std::sqrt(x + epsilon);
             }).array() / this->variables["cW"].unaryExpr([epsilon](double x) {
                 return std::sqrt(x + epsilon);
@@ -254,7 +254,7 @@ namespace Impulse {
 
             this->variables["cB"] = ((gamma * this->variables["cB"].array()) +
                                      (1.0 - gamma) * (this->variables["gB"].array().square()));
-            Eigen::MatrixXd deltaParameters2 = -(this->variables["vB"].unaryExpr([epsilon](double x) {
+            Math::Matrix deltaParameters2 = -(this->variables["vB"].unaryExpr([epsilon](double x) {
                 return std::sqrt(x + epsilon);
             }).array() / this->variables["cB"].unaryExpr([epsilon](double x) {
                 return std::sqrt(x + epsilon);

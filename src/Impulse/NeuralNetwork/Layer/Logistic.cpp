@@ -6,12 +6,12 @@ namespace Impulse {
             Logistic::Logistic() : Abstract1D() {
             };
 
-            Eigen::MatrixXd Logistic::activation() {
+            Math::Matrix Logistic::activation() {
                 this->computation->logisticActivation();
                 return this->computation->getVariable("A");
             }
 
-            Eigen::MatrixXd Logistic::derivative(Eigen::MatrixXd &a) {
+            Math::Matrix Logistic::derivative(Math::Matrix &a) {
                 return this->computation->logisticDerivative(a);
             }
 
@@ -19,7 +19,7 @@ namespace Impulse {
                 return LayerType::Logistic;
             }
 
-            double Logistic::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+            double Logistic::loss(Math::Matrix &output, Math::Matrix &predictions) {
                 return this->computation->logisticLoss(output, predictions);
             }
 

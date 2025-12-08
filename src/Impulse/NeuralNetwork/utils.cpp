@@ -3,7 +3,7 @@
 namespace Impulse {
     namespace NeuralNetwork {
         namespace Utils {
-            Eigen::MatrixXd im2col(const Eigen::MatrixXd &input, int channels,
+            Math::Matrix im2col(const Math::Matrix &input, int channels,
                                    int height, int width,
                                    int kernel_h, int kernel_w,
                                    int pad_h, int pad_w,
@@ -14,7 +14,7 @@ namespace Impulse {
                            ((height - kernel_h + 2 * pad_h) / stride_h + 1);
                 int currentResultCol = 0;
 
-                Eigen::MatrixXd result(rows, cols);
+                Math::Matrix result(rows, cols);
                 result.setZero();
 
                 for (int boundingY = -pad_h;
@@ -43,7 +43,7 @@ namespace Impulse {
                 return result;
             }
 
-            Eigen::MatrixXd maxpool(const Eigen::MatrixXd &input, int channels,
+            Math::Matrix maxpool(const Math::Matrix &input, int channels,
                                     int height, int width,
                                     int kernel_h, int kernel_w,
                                     int stride_h, int stride_w) {
@@ -52,7 +52,7 @@ namespace Impulse {
                 int resultDepth = channels;
                 int currentResultCol = 0;
 
-                Eigen::MatrixXd result(resultWidth * resultHeight * resultDepth, 1);
+                Math::Matrix result(resultWidth * resultHeight * resultDepth, 1);
                 result.setZero();
 
                 for (int boundingY = 0; boundingY + kernel_h <= height; boundingY += stride_h) {

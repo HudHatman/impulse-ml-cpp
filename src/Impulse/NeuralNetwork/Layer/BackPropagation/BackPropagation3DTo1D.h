@@ -8,10 +8,10 @@ namespace Impulse {
                 public:
                     BackPropagation3DTo1D(Layer::LayerPointer layer, Layer::LayerPointer previousLayer);
 
-                    Eigen::MatrixXd propagate(const Eigen::MatrixXd &input,
+                    Math::Matrix propagate(const Math::Matrix &input,
                                               T_Size numberOfExamples,
                                               double regularization,
-                                              const Eigen::MatrixXd &sigma);
+                                              const Math::Matrix &sigma);
                 };
             }
         }

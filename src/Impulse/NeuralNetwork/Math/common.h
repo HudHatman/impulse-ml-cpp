@@ -20,6 +20,8 @@ namespace Impulse {
              * @return
              */
             Eigen::VectorXd rawToVector(Math::T_RawVector &vec);
+
+            using Matrix = Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor>;
         }
     }
 }

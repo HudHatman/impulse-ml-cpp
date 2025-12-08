@@ -27,15 +27,15 @@ namespace Impulse {
 
                 T_Size getStride();
 
-                Eigen::MatrixXd forward(const Eigen::MatrixXd &input) override;
+                Math::Matrix forward(const Math::Matrix &input) override;
 
-                Eigen::MatrixXd activation() override;
+                Math::Matrix activation() override;
 
-                Eigen::MatrixXd derivative(Eigen::MatrixXd &a) override;
+                Math::Matrix derivative(Math::Matrix &a) override;
 
                 LayerType getType() override;
 
-                double loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) override;
+                double loss(Math::Matrix &output, Math::Matrix &predictions) override;
 
                 double error(T_Size m) override;
 

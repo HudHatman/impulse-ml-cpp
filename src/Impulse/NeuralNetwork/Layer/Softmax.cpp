@@ -6,12 +6,12 @@ namespace Impulse {
             Softmax::Softmax() : Abstract1D() {
             }
 
-            Eigen::MatrixXd Softmax::activation() {
+            Math::Matrix Softmax::activation() {
                 this->computation->softmaxActivation();
                 return this->computation->getVariable("A");
             }
 
-            Eigen::MatrixXd Softmax::derivative(Eigen::MatrixXd &a) {
+            Math::Matrix Softmax::derivative(Math::Matrix &a) {
                 return this->computation->softmaxDerivative(a);
             }
 
@@ -19,7 +19,7 @@ namespace Impulse {
                 return LayerType::Softmax;
             }
 
-            double Softmax::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+            double Softmax::loss(Math::Matrix &output, Math::Matrix &predictions) {
                 return this->computation->softmaxLoss(output, predictions);
             }
 

@@ -16,21 +16,21 @@ namespace Impulse {
                 return this->input.getSize();
             }
 
-            Eigen::MatrixXd getInput(T_Size offset, T_Size batchSize) {
-                Eigen::MatrixXd input = this->input.exportToEigen();
+            Matrix getInput(T_Size offset, T_Size batchSize) {
+                Matrix input = this->input.exportToEigen();
                 return input.block(offset, 0, batchSize, input.cols()).transpose();
             }
 
-            Eigen::MatrixXd getOutput(T_Size offset, T_Size batchSize) {
-                Eigen::MatrixXd output = this->output.exportToEigen();
+            Matrix getOutput(T_Size offset, T_Size batchSize) {
+                Matrix output = this->output.exportToEigen();
                 return output.block(offset, 0, batchSize, output.cols()).transpose();
             }
 
-            Eigen::MatrixXd getInput() {
+            Matrix getInput() {
                 return this->input.exportToEigen().transpose();
             }
 
-            Eigen::MatrixXd getOutput() {
+            Matrix getOutput() {
                 return this->output.exportToEigen().transpose();
             }
         };

@@ -6,12 +6,12 @@ namespace Impulse {
             Tanh::Tanh() : Abstract1D() {
             };
 
-            Eigen::MatrixXd Tanh::activation() {
+            Math::Matrix Tanh::activation() {
                 this->computation->tanhActivation();
                 return this->computation->getVariable("A");
             }
 
-            Eigen::MatrixXd Tanh::derivative(Eigen::MatrixXd &a) {
+            Math::Matrix Tanh::derivative(Math::Matrix &a) {
                 return this->computation->tanhDerivative(a);
             }
 
@@ -19,7 +19,7 @@ namespace Impulse {
                 return LayerType::Tanh;
             }
 
-            double Tanh::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+            double Tanh::loss(Math::Matrix &output, Math::Matrix &predictions) {
                 return 0.0; // TODO
             }
 

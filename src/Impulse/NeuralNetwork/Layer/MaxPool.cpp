@@ -26,10 +26,10 @@ namespace Impulse {
                 return this->stride;
             }
 
-            Eigen::MatrixXd MaxPool::forward(const Eigen::MatrixXd &input) {
+            Math::Matrix MaxPool::forward(const Math::Matrix &input) {
                 this->computation->setVariable("Z", input);
 
-                Eigen::MatrixXd result(this->getOutputWidth() * this->getOutputHeight() * this->getOutputDepth(),
+                Math::Matrix result(this->getOutputWidth() * this->getOutputHeight() * this->getOutputDepth(),
                                        input.cols());
 
 #pragma omp parallel
@@ -43,21 +43,21 @@ namespace Impulse {
                 return result;
             }
 
-            Eigen::MatrixXd MaxPool::activation() {
+            Math::Matrix MaxPool::activation() {
                 static_assert("No activation for MAXPOOL layer.", "");
-                return Eigen::MatrixXd(); // no activation for maxpool layer
+                return Math::Matrix(); // no activation for maxpool layer
             }
 
-            Eigen::MatrixXd MaxPool::derivative(Eigen::MatrixXd &) {
+            Math::Matrix MaxPool::derivative(Math::Matrix &) {
                 static_assert("No derivative for MAXPOOL layer.", "");
-                return Eigen::MatrixXd(); // no derivative for maxpool layer
+                return Math::Matrix(); // no derivative for maxpool layer
             }
 
             LayerType MaxPool::getType() {
                 return LayerType::MaxPool;
             }
 
-            double MaxPool::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+            double MaxPool::loss(Math::Matrix &output, Math::Matrix &predictions) {
                 static_assert("No loss for MAXPOOL layer.", "");
                 return 0.0;
             }

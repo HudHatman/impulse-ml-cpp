@@ -16,16 +16,16 @@ namespace Impulse {
                 Eigen::VectorXd theta = this->network.getRolledTheta();
                 double regularization = this->regularization;
 
-                Eigen::MatrixXd input = dataSet.getInput();
-                Eigen::MatrixXd output = dataSet.getOutput();
-                Eigen::MatrixXd forward = this->network.forward(input);
+                Math::Matrix input = dataSet.getInput();
+                Math::Matrix output = dataSet.getOutput();
+                Math::Matrix forward = this->network.forward(input);
 
                 this->network.backward(input, output, forward, this->regularization);
 
                 Trainer::StepFunction callback(
                     [this, &dataSet, &regularization, &input, &output, &forward](Eigen::VectorXd input2) {
                         this->network.setRolledTheta(input2);
-                        Eigen::MatrixXd forward = this->network.forward(input);
+                        Math::Matrix forward = this->network.forward(input);
                         this->network.backward(input, output, forward, regularization);
                         return this->cost(dataSet, true);
                     });

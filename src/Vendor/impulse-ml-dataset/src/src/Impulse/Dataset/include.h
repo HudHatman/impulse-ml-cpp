@@ -20,6 +20,8 @@
 #include <locale>
 #include <regex>
 
+using Matrix = Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor>;
+
 #include "common.h"
 #include "DatasetSample.h"
 #include "Dataset.h"

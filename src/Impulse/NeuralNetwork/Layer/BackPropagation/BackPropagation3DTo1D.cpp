@@ -8,10 +8,10 @@ namespace Impulse {
                 (Layer::LayerPointer layer, Layer::LayerPointer previousLayer) : Abstract(layer, previousLayer) {
                 }
 
-                Eigen::MatrixXd BackPropagation3DTo1D::propagate(const Eigen::MatrixXd &input,
+                Math::Matrix BackPropagation3DTo1D::propagate(const Math::Matrix &input,
                                                                  T_Size numberOfExamples,
                                                                  double regularization,
-                                                                 const Eigen::MatrixXd &sigma) {
+                                                                 const Math::Matrix &sigma) {
                     return sigma;
                 }
             }

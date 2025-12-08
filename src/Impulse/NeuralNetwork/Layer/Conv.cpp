@@ -42,19 +42,19 @@ namespace Impulse {
                 this->computation->setZero("wB");
             }
 
-            Eigen::MatrixXd Conv::forward(const Eigen::MatrixXd &input) {
-                Eigen::MatrixXd result(this->getOutputWidth() * this->getOutputHeight() * this->getOutputDepth(),
+            Math::Matrix Conv::forward(const Math::Matrix &input) {
+                Math::Matrix result(this->getOutputWidth() * this->getOutputHeight() * this->getOutputDepth(),
                                        input.cols());
 
 #pragma omp parallel
                 for (T_Size i = 0; i < input.cols(); i++) {
-                    Eigen::MatrixXd conv = Utils::im2col(input.col(i), this->depth,
+                    Math::Matrix conv = Utils::im2col(input.col(i), this->depth,
                                                          this->height, this->width,
                                                          this->filterSize, this->filterSize,
                                                          this->padding, this->padding,
                                                          this->stride, this->stride);
 
-                    Eigen::MatrixXd tmp = this->computation->forward(conv).transpose(); // transpose for
+                    Math::Matrix tmp = this->computation->forward(conv).transpose(); // transpose for
                     // rolling to vector
                     Eigen::Map<Eigen::VectorXd> tmp2(tmp.data(), tmp.size());
                     result.col(i) = tmp2;
@@ -110,12 +110,12 @@ namespace Impulse {
                 return this->numFilters;
             }
 
-            Eigen::MatrixXd Conv::activation() {
+            Math::Matrix Conv::activation() {
                 this->computation->reluActivation();
                 return this->computation->getVariable("A");
             }
 
-            Eigen::MatrixXd Conv::derivative(Eigen::MatrixXd &a) {
+            Math::Matrix Conv::derivative(Math::Matrix &a) {
                 return this->computation->reluDerivative(a);
             }
 
@@ -123,7 +123,7 @@ namespace Impulse {
                 return LayerType::Conv;
             }
 
-            double Conv::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+            double Conv::loss(Math::Matrix &output, Math::Matrix &predictions) {
                 static_assert("No loss for CONV layer.", "");
                 return 0.0;
             }

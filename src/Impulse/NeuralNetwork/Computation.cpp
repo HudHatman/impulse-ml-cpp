@@ -6,11 +6,11 @@ namespace Impulse {
             this->computation = new ComputationCpu();
         }
 
-        Eigen::MatrixXd &Computation::getVariable(T_String name) {
+        Math::Matrix &Computation::getVariable(T_String name) {
             return this->computation->getVariable(name);
         }
 
-        void Computation::setVariable(T_String name, const Eigen::MatrixXd &variable) {
+        void Computation::setVariable(T_String name, const Math::Matrix &variable) {
             this->computation->setVariable(name, variable);
         }
 
@@ -18,8 +18,8 @@ namespace Impulse {
             this->computation->initialize(name);
         }
 
-        Eigen::MatrixXd
-        Computation::forward(const Eigen::MatrixXd &input) {
+        Math::Matrix
+        Computation::forward(const Math::Matrix &input) {
             return this->computation->forward(input);
         }
 
@@ -39,7 +39,7 @@ namespace Impulse {
             return this->computation->reluActivation();
         }
 
-        Eigen::MatrixXd Computation::reluDerivative(Eigen::MatrixXd &m) {
+        Math::Matrix Computation::reluDerivative(Math::Matrix &m) {
             return this->computation->reluDerivative(m);
         }
 
@@ -47,7 +47,7 @@ namespace Impulse {
             return this->computation->logisticActivation();
         }
 
-        Eigen::MatrixXd Computation::logisticDerivative(Eigen::MatrixXd &m) {
+        Math::Matrix Computation::logisticDerivative(Math::Matrix &m) {
             return this->computation->logisticDerivative(m);
         }
 
@@ -55,7 +55,7 @@ namespace Impulse {
             return this->computation->softmaxActivation();
         }
 
-        Eigen::MatrixXd Computation::softmaxDerivative(Eigen::MatrixXd &m) {
+        Math::Matrix Computation::softmaxDerivative(Math::Matrix &m) {
             return this->computation->softmaxDerivative(m);
         }
 
@@ -63,7 +63,7 @@ namespace Impulse {
             return this->computation->softplusActivation();
         }
 
-        Eigen::MatrixXd Computation::softplusDerivative(Eigen::MatrixXd &m) {
+        Math::Matrix Computation::softplusDerivative(Math::Matrix &m) {
             return this->computation->softplusDerivative(m);
         }
 
@@ -71,19 +71,19 @@ namespace Impulse {
             return this->computation->tanhActivation();
         }
 
-        Eigen::MatrixXd Computation::tanhDerivative(Eigen::MatrixXd &m) {
+        Math::Matrix Computation::tanhDerivative(Math::Matrix &m) {
             return this->computation->tanhDerivative(m);
         }
 
-        double Computation::logisticLoss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+        double Computation::logisticLoss(Math::Matrix &output, Math::Matrix &predictions) {
             return this->computation->logisticLoss(output, predictions);
         }
 
-        double Computation::purelinLoss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+        double Computation::purelinLoss(Math::Matrix &output, Math::Matrix &predictions) {
             return this->computation->purelinLoss(output, predictions);
         }
 
-        double Computation::softmaxLoss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+        double Computation::softmaxLoss(Math::Matrix &output, Math::Matrix &predictions) {
             return this->computation->softmaxLoss(output, predictions);
         }
 

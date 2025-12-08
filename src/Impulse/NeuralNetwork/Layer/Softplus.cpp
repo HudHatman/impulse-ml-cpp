@@ -6,12 +6,12 @@ namespace Impulse {
             Softplus::Softplus() : Abstract1D() {
             };
 
-            Eigen::MatrixXd Softplus::activation() {
+            Math::Matrix Softplus::activation() {
                 this->computation->softplusActivation();
                 return this->computation->getVariable("A");
             }
 
-            Eigen::MatrixXd Softplus::derivative(Eigen::MatrixXd &a) {
+            Math::Matrix Softplus::derivative(Math::Matrix &a) {
                 return this->computation->softplusDerivative(a);
             }
 
@@ -19,7 +19,7 @@ namespace Impulse {
                 return LayerType::Softplus;
             }
 
-            double Softplus::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+            double Softplus::loss(Math::Matrix &output, Math::Matrix &predictions) {
                 return 0.0; // TODO
             }
 

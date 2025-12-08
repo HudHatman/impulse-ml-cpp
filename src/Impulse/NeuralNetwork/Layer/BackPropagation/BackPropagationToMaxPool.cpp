@@ -9,11 +9,11 @@ namespace Impulse {
                     previousLayer) {
                 }
 
-                Eigen::MatrixXd
-                BackPropagationToMaxPool::propagate(const Eigen::MatrixXd &input, T_Size numberOfExamples,
-                                                    double regularization, const Eigen::MatrixXd &sigma) {
+                Math::Matrix
+                BackPropagationToMaxPool::propagate(const Math::Matrix &input, T_Size numberOfExamples,
+                                                    double regularization, const Math::Matrix &sigma) {
                     auto *prevLayer = (Layer::MaxPool *) this->previousLayer.get();
-                    Eigen::MatrixXd result(prevLayer->getComputation()->getVariable("Z").rows(),
+                    Math::Matrix result(prevLayer->getComputation()->getVariable("Z").rows(),
                                            prevLayer->getComputation()->getVariable("Z").cols());
                     result.setZero();
 

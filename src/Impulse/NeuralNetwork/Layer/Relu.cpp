@@ -6,12 +6,12 @@ namespace Impulse {
             Relu::Relu() : Abstract1D() {
             };
 
-            Eigen::MatrixXd Relu::activation() {
+            Math::Matrix Relu::activation() {
                 this->computation->reluActivation();
                 return this->computation->getVariable("A");
             }
 
-            Eigen::MatrixXd Relu::derivative(Eigen::MatrixXd &a) {
+            Math::Matrix Relu::derivative(Math::Matrix &a) {
                 return this->computation->reluDerivative(a);
             }
 
@@ -19,7 +19,7 @@ namespace Impulse {
                 return LayerType::Relu;
             }
 
-            double Relu::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+            double Relu::loss(Math::Matrix &output, Math::Matrix &predictions) {
                 // TODO
                 return 0.0;
             }

@@ -6,12 +6,12 @@ namespace Impulse {
             Purelin::Purelin() : Abstract1D() {
             };
 
-            Eigen::MatrixXd Purelin::activation() {
+            Math::Matrix Purelin::activation() {
                 return this->computation->getVariable("Z");
             }
 
-            Eigen::MatrixXd Purelin::derivative(Eigen::MatrixXd &) {
-                Eigen::MatrixXd d(this->computation->getVariable("Z").rows(),
+            Math::Matrix Purelin::derivative(Math::Matrix &) {
+                Math::Matrix d(this->computation->getVariable("Z").rows(),
                                   this->computation->getVariable("Z").cols());
                 d.setOnes();
                 return d;
@@ -21,7 +21,7 @@ namespace Impulse {
                 return LayerType::Purelin;
             }
 
-            double Purelin::loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) {
+            double Purelin::loss(Math::Matrix &output, Math::Matrix &predictions) {
                 return this->computation->purelinLoss(output, predictions);
             }
 

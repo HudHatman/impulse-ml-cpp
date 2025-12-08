@@ -50,9 +50,9 @@ namespace Impulse {
                     for (T_Size batch = 0, offset = 0; batch < numberOfExamples; batch += batchSize, offset++) {
                         high_resolution_clock::time_point beginIterationBatch = high_resolution_clock::now();
 
-                        Eigen::MatrixXd input = dataSet.getInput(offset, batchSize);
-                        Eigen::MatrixXd output = dataSet.getOutput(offset, batchSize);
-                        Eigen::MatrixXd forward = this->network.forward(input);
+                        Math::Matrix input = dataSet.getInput(offset, batchSize);
+                        Math::Matrix output = dataSet.getOutput(offset, batchSize);
+                        Math::Matrix forward = this->network.forward(input);
 
                         this->network.backward(input, output, forward, this->regularization);
 

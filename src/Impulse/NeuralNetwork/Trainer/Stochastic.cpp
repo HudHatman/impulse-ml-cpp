@@ -38,9 +38,9 @@ namespace Impulse {
                 for (T_Size i = 0; i < this->learningIterations; i++) {
                     high_resolution_clock::time_point begin = high_resolution_clock::now();
 
-                    Eigen::MatrixXd input = dataSet.getInput();
-                    Eigen::MatrixXd output = dataSet.getOutput();
-                    Eigen::MatrixXd forward = this->network.forward(input);
+                    Math::Matrix input = dataSet.getInput();
+                    Math::Matrix output = dataSet.getOutput();
+                    Math::Matrix forward = this->network.forward(input);
 
                     this->network.backward(input, output, forward, this->regularization);
 

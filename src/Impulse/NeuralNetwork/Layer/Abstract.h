@@ -42,19 +42,19 @@ namespace Impulse {
                  * @param input
                  * @return
                  */
-                virtual Eigen::MatrixXd forward(const Eigen::MatrixXd &input);
+                virtual Math::Matrix forward(const Math::Matrix &input);
 
                 /**
                  * Calculates activated values.
                  * @return
                  */
-                virtual Eigen::MatrixXd activation() = 0;
+                virtual Math::Matrix activation() = 0;
 
                 /**
                  * Calculates derivative. It depends on activation function.
                  * @return
                  */
-                virtual Eigen::MatrixXd derivative(Eigen::MatrixXd &) = 0;
+                virtual Math::Matrix derivative(Math::Matrix &) = 0;
 
                 /**
                  * Getter for layer type.
@@ -145,7 +145,7 @@ namespace Impulse {
                  * @param predictions
                  * @return
                  */
-                virtual double loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions) = 0;
+                virtual double loss(Math::Matrix &output, Math::Matrix &predictions) = 0;
 
                 /**
                  * Error term for network.

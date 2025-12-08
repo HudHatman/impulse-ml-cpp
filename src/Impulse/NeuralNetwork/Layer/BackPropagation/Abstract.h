@@ -24,10 +24,10 @@ namespace Impulse {
                 public:
                     Abstract(Layer::LayerPointer layer, Layer::LayerPointer previousLayer);
 
-                    virtual Eigen::MatrixXd propagate(const Eigen::MatrixXd &input,
+                    virtual Math::Matrix propagate(const Math::Matrix &input,
                                                       T_Size numberOfExamples,
                                                       double regularization,
-                                                      const Eigen::MatrixXd &delta) = 0;
+                                                      const Math::Matrix &delta) = 0;
                 };
             }
         }

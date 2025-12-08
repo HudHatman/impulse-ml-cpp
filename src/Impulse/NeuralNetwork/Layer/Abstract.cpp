@@ -24,7 +24,7 @@ namespace Impulse {
                 delete this->computation;
             }
 
-            Eigen::MatrixXd Abstract::forward(const Eigen::MatrixXd &input) {
+            Math::Matrix Abstract::forward(const Math::Matrix &input) {
                 this->computation->forward(input);
                 this->activation();
                 return this->computation->getVariable("A");

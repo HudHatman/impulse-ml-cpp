@@ -12,10 +12,10 @@ namespace Impulse {
                 public:
                     explicit Abstract(Network::Network &network) : network(network) {} ;
                     virtual ~Abstract() = default;
-                    virtual double loss(Eigen::MatrixXd output, Eigen::MatrixXd predictions) = 0;
-                    virtual double accuracy(Eigen::MatrixXd output, Eigen::MatrixXd predictions) = 0;
-                    virtual Eigen::MatrixXd derivative(Eigen::MatrixXd output, Eigen::MatrixXd predictions,
-                                                       Eigen::MatrixXd activationDerivative) = 0;
+                    virtual double loss(Math::Matrix output, Math::Matrix predictions) = 0;
+                    virtual double accuracy(Math::Matrix output, Math::Matrix predictions) = 0;
+                    virtual Math::Matrix derivative(Math::Matrix output, Math::Matrix predictions,
+                                                       Math::Matrix activationDerivative) = 0;
                 };
             }
         }

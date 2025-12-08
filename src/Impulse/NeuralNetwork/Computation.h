@@ -13,7 +13,7 @@ namespace Impulse {
         public:
             explicit Computation();
 
-            Eigen::MatrixXd &getVariable(T_String);
+            Math::Matrix &getVariable(T_String);
 
             void initialize(T_String);
 
@@ -23,35 +23,35 @@ namespace Impulse {
 
             void randomInit(T_String, double);
 
-            void setVariable(T_String, const Eigen::MatrixXd &);
+            void setVariable(T_String, const Math::Matrix &);
 
-            Eigen::MatrixXd forward(const Eigen::MatrixXd &);
+            Math::Matrix forward(const Math::Matrix &);
 
             void reluActivation();
 
-            Eigen::MatrixXd reluDerivative(Eigen::MatrixXd &);
+            Math::Matrix reluDerivative(Math::Matrix &);
 
             void logisticActivation();
 
-            Eigen::MatrixXd logisticDerivative(Eigen::MatrixXd &);
+            Math::Matrix logisticDerivative(Math::Matrix &);
 
             void softmaxActivation();
 
-            Eigen::MatrixXd softmaxDerivative(Eigen::MatrixXd &);
+            Math::Matrix softmaxDerivative(Math::Matrix &);
 
             void softplusActivation();
 
-            Eigen::MatrixXd softplusDerivative(Eigen::MatrixXd &);
+            Math::Matrix softplusDerivative(Math::Matrix &);
 
             void tanhActivation();
 
-            Eigen::MatrixXd tanhDerivative(Eigen::MatrixXd &);
+            Math::Matrix tanhDerivative(Math::Matrix &);
 
-            double logisticLoss(Eigen::MatrixXd &, Eigen::MatrixXd &);
+            double logisticLoss(Math::Matrix &, Math::Matrix &);
 
-            double purelinLoss(Eigen::MatrixXd &, Eigen::MatrixXd &);
+            double purelinLoss(Math::Matrix &, Math::Matrix &);
 
-            double softmaxLoss(Eigen::MatrixXd &, Eigen::MatrixXd &);
+            double softmaxLoss(Math::Matrix &, Math::Matrix &);
 
             double penalty();
 

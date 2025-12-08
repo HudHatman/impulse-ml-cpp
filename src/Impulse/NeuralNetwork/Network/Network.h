@@ -21,10 +21,10 @@ namespace Impulse {
 
                 void addLayer(Layer::LayerPointer layer);
 
-                Eigen::MatrixXd forward(const Eigen::MatrixXd &input);
+                Math::Matrix forward(const Math::Matrix &input);
 
                 void
-                backward(Eigen::MatrixXd &X, Eigen::MatrixXd &Y, Eigen::MatrixXd &predictions, double regularization);
+                backward(Math::Matrix &X, Math::Matrix &Y, Math::Matrix &predictions, double regularization);
 
                 T_Dimension getDimension();
 
@@ -38,7 +38,7 @@ namespace Impulse {
 
                 void setRolledTheta(Eigen::VectorXd &theta);
 
-                double loss(Eigen::MatrixXd &output, Eigen::MatrixXd &predictions);
+                double loss(Math::Matrix &output, Math::Matrix &predictions);
 
                 double error(T_Size m);
 

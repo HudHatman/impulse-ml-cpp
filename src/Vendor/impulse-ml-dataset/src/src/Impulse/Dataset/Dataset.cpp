@@ -42,10 +42,10 @@ namespace Impulse {
             return 0;
         }
 
-        Eigen::MatrixXd Dataset::exportToEigen() {
+        Matrix Dataset::exportToEigen() {
             DatasetData samples = this->getSamples();
             int row = 0;
-            Eigen::MatrixXd result;
+            Matrix result;
 
             result.resize(this->getSize(), this->getColumnsSize());
             for (auto &sample : samples) {
