@@ -161,8 +161,8 @@ void mnist_minibatch_gradient_descent() {
 
     Network::Network net = builder.build();
 
-    Trainer::MiniBatch<Trainer::Optimizer::Adagrad, Trainer::Cost::CrossEntropy> trainer(net);
-    trainer.setLearningIterations(3);
+    Trainer::MiniBatch<Trainer::Optimizer::Adam, Trainer::Cost::CrossEntropy> trainer(net);
+    trainer.setLearningIterations(6);
     trainer.setVerboseStep(1);
     trainer.setRegularization(0.05);
     trainer.setVerbose(true);
@@ -170,12 +170,12 @@ void mnist_minibatch_gradient_descent() {
     trainer.setStepCallback([&trainer, &testDataset, &net]() {
         std::cout << "___STEP___" << std::endl;
         std::cout << "Cost: " << trainer.cost->loss(net.forward(testDataset.getInput()), testDataset.getOutput()) << std::endl;
-        std::cout << "Accuracy: " << trainer.cost->accuracy(testDataset.getInput(), testDataset.getOutput()) << "%" << std::endl;
+        std::cout << "Accuracy: " << trainer.cost->accuracy(net.forward(testDataset.getInput()), testDataset.getOutput()) << "%" << std::endl;
     });
 
     std::cout << "calculating cost." << std::endl;
     std::cout << "Cost: " << trainer.cost->loss(net.forward(testDataset.getInput()), testDataset.getOutput()) << std::endl;
-    std::cout << "Accuracy: " << trainer.cost->accuracy(testDataset.getInput(), testDataset.getOutput()) << "%" << std::endl;
+    std::cout << "Accuracy: " << trainer.cost->accuracy(net.forward(testDataset.getInput()), testDataset.getOutput()) << "%" << std::endl;
     std::cout << "Forward:" << std::endl << net.forward(dataset.input.getSampleAt(0)->exportToEigen()) << std::endl;
 
     std::cout << "starting training." << std::endl;
@@ -191,7 +191,7 @@ void mnist_minibatch_gradient_descent() {
     auto duration2 = duration_cast<microseconds>(t4 - t3).count();
     std::cout << "Forward time: " << duration2 << " microseconds." << std::endl;
     std::cout << "Cost: " << trainer.cost->loss(net.forward(dataset.getInput()), dataset.getOutput()) << std::endl;
-    std::cout << "Accuracy: " << trainer.cost->accuracy(dataset.getInput(), dataset.getOutput()) << "%" << std::endl;
+    std::cout << "Accuracy: " << trainer.cost->accuracy(net.forward(testDataset.getInput()), dataset.getOutput()) << "%" << std::endl;
 
     Serializer serializer(net);
     serializer.toJSON("../saved/test_mnist_minibatch_gradient_descent.json");

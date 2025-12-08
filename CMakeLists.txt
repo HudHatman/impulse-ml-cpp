@@ -14,7 +14,17 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
 
-set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -march=native -DNDEBUG -flto")
+if(UNIX)
+  add_compile_options(
+          -march=native
+          -flto
+          -ffast-math
+          -fno-math-errno
+          -O3
+          -DNDEBUG
+  )
+  add_link_options(-flto)
+endif()
 
 include_directories(src/Impulse/NeuralNetwork)
 include_directories(src/Impulse/NeuralNetwork/Builder)
@@ -151,5 +161,5 @@ add_executable(impulse_ml_neural_network
         main.cpp src/Vendor/impulse-ml-dataset/src/src/Impulse/Dataset/Dictionary.cpp)
 
 target_link_libraries(impulse_ml_neural_network PRIVATE OpenMP::OpenMP_CXX ${MKL_LIBRARIES} pthread m dl)
-target_include_directories(impulse_ml_neural_network PRIVATE ${MKL_INCLUDE_DIRS})
+target_include_directories(impulse_ml_neural_network PRIVATE ${MKL_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIR})
 target_compile_definitions(impulse_ml_neural_network PRIVATE EIGEN_USE_MKL_ALL)

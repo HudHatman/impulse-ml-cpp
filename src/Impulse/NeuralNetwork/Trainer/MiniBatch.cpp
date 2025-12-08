@@ -82,7 +82,7 @@ namespace Impulse {
                             std::cout << "Iteration: " << (i + 1)
                                     << " | Cost: " << this->cost->loss(this->network.forward(dataSet.getInput()),
                                                                        dataSet.getOutput())
-                                    << " | Accuracy: " << this->cost->accuracy(dataSet.getInput(), dataSet.getOutput())
+                                    << " | Accuracy: " << this->cost->accuracy(this->network.forward(dataSet.getInput()), dataSet.getOutput())
                                     << "% | Time: " << duration << "ms"
                                     << std::endl;
                         }

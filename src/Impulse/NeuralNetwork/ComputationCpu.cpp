@@ -27,9 +27,7 @@ namespace Impulse {
 
         void ComputationCpu::randomInit(T_String name, double parameter) {
             this->variables[name].setRandom();
-            this->variables[name] = this->variables[name].unaryExpr([parameter](const double x) {
-                return x * sqrt(2.0 / parameter);
-            }).eval();
+            this->variables[name] *= sqrt(2.0 / parameter);
         }
 
         Eigen::MatrixXd
@@ -60,7 +58,7 @@ namespace Impulse {
         }
 
         Eigen::MatrixXd ComputationCpu::logisticDerivative(Eigen::MatrixXd &m) {
-            return (m.array() * (1.0 - m.array())).eval();
+            return (m.array() * (1.0 - m.array())).matrix();
         }
 
         void ComputationCpu::softmaxActivation() {
@@ -126,8 +124,8 @@ namespace Impulse {
         }
 
         void ComputationCpu::gradientDescent(double learningRate) {
-            this->variables["W"] = (this->variables["W"].array() - learningRate * this->variables["gW"].array()).eval();
-            this->variables["b"] = (this->variables["b"].array() - learningRate * this->variables["gB"].array()).eval();
+            this->variables["W"] -= learningRate * this->variables["gW"];
+            this->variables["b"] -= learningRate * this->variables["gB"];
         }
 
         double ComputationCpu::penalty() {
@@ -142,37 +140,32 @@ namespace Impulse {
             double beta2 = 0.999;
             double epsilon = 1e-8;
 
-            this->variables["vW"] = (beta1 * this->variables["vW"] + (1 - beta1) * this->variables["gW"]).eval();
+            Eigen::MatrixXd vW = (beta1 * this->variables["vW"] + ((1 - beta1) * this->variables["gW"]));
+            this->variables["vW"] = vW;
             Eigen::MatrixXd wCorrected = this->variables["vW"] / (1 - std::pow(beta1, t));
 
-            this->variables["cW"] = (beta2 * this->variables["cW"].array() +
-                                     (1 - beta2) * (this->variables["gW"].array() * this->variables["gW"].array())).
-                    eval();
+            Eigen::MatrixXd cW = (beta2 * this->variables["cW"].array() +
+                                  (1 - beta2) * (this->variables["gW"].array().square()));
+            this->variables["cW"] = cW;
 
             Eigen::MatrixXd sCorrected = this->variables["cW"] / (1 - std::pow(beta2, t));
-            sCorrected = sCorrected.unaryExpr([epsilon](double x) {
-                return std::sqrt(x + epsilon);
-            });
+            sCorrected = sCorrected.array().sqrt();
 
-            this->variables["W"] =
-                    (this->variables["W"].array() - learningRate * (wCorrected.array() / sCorrected.array())).eval();
+            this->variables["W"].array() -= learningRate * (wCorrected.array() / sCorrected.array());
 
             //
-
-            this->variables["vB"] = (beta1 * this->variables["vB"] + (1 - beta1) * this->variables["gB"]).eval();
+            Eigen::MatrixXd vB = (beta1 * this->variables["vB"] + (1 - beta1) * this->variables["gB"]);
+            this->variables["vB"] = vB;
             Eigen::VectorXd wCorrected2 = this->variables["vB"] / (1 - std::pow(beta1, t));
 
-            this->variables["cB"] = (beta2 * this->variables["cB"].array() +
-                                     (1 - beta2) * (this->variables["gB"].array() * this->variables["gB"].array())).
-                    eval();
+            Eigen::MatrixXd cB = (beta2 * this->variables["cB"].array() +
+                                  (1 - beta2) * (this->variables["gB"].array().square()));
+            this->variables["cB"] = cB;
 
             Eigen::VectorXd sCorrected2 = this->variables["cB"] / (1 - std::pow(beta2, t));
-            sCorrected2 = sCorrected2.unaryExpr([epsilon](double x) {
-                return std::sqrt(x + epsilon);
-            });
+            sCorrected2 = sCorrected2.array().sqrt();
 
-            this->variables["b"] =
-                    (this->variables["b"].array() - learningRate * (wCorrected2.array() / sCorrected2.array())).eval();
+            this->variables["b"].array() -= learningRate * (wCorrected2.array() / sCorrected2.array());
         }
 
         void ComputationCpu::gradientRmsProp(double learningRate, T_Size batchSize) {
@@ -181,76 +174,65 @@ namespace Impulse {
             double epsilon = 1e-8;
 
             this->variables["cW"] = (gamma * this->variables["cW"].array() +
-                                     (1.0 - gamma) * (this->variables["gW"].array() * this->variables["gW"].array())).
-                    eval();
-            this->variables["W"] = (this->variables["W"].array() - (this->variables["gW"].array() * alpha /
-                                                                    this->variables["cW"].unaryExpr(
-                                                                        [epsilon](double x) {
-                                                                            return std::sqrt(x + epsilon);
-                                                                        }).array())).eval();
+                                     (1.0 - gamma) * (this->variables["gW"].array().square()));
+            this->variables["W"].array() -= (this->variables["gW"].array() * alpha /
+                                             this->variables["cW"].unaryExpr(
+                                                 [epsilon](double x) {
+                                                     return std::sqrt(x + epsilon);
+                                                 }).array());
 
             this->variables["cB"] = (gamma * this->variables["cB"].array() +
-                                     (1.0 - gamma) * (this->variables["gB"].array() * this->variables["gB"].array())).
-                    eval();
-            this->variables["b"] = (this->variables["b"].array() - (this->variables["gB"].array() * alpha /
-                                                                    this->variables["cB"].unaryExpr(
-                                                                        [epsilon](double x) {
-                                                                            return std::sqrt(x + epsilon);
-                                                                        }).array())).eval();
+                                     (1.0 - gamma) * (this->variables["gB"].array().square()));
+            this->variables["b"].array() -= (this->variables["gB"].array() * alpha /
+                                             this->variables["cB"].unaryExpr(
+                                                 [epsilon](double x) {
+                                                     return std::sqrt(x + epsilon);
+                                                 }).array());
         }
 
         void ComputationCpu::gradientAdagrad(double learningRate, T_Size batchSize) {
             double epsilon = 1e-8;
 
-            this->variables["cW"] = (this->variables["cW"].array() + this->variables["gW"].unaryExpr([](double x) {
-                return std::pow(x, 2);
-            }).array()).eval();
-            this->variables["W"] = (this->variables["W"].array() - (learningRate * this->variables["gW"].array() /
-                                                                    this->variables["cW"].unaryExpr(
-                                                                        [epsilon](double x) {
-                                                                            return std::sqrt(x + epsilon);
-                                                                        }).array())).eval();
+            this->variables["cW"].array() += this->variables["gW"].array().square();
+            this->variables["W"].array() -= (learningRate * this->variables["gW"].array() /
+                                             this->variables["cW"].unaryExpr(
+                                                 [epsilon](double x) {
+                                                     return std::sqrt(x + epsilon);
+                                                 }).array());
 
-            this->variables["cB"] = (this->variables["cB"].array() + this->variables["gB"].unaryExpr([](double x) {
-                return std::pow(x, 2);
-            }).array()).eval();
-            this->variables["b"] = (this->variables["b"].array() - (learningRate * this->variables["gB"].array() /
-                                                                    this->variables["cB"].unaryExpr(
-                                                                        [epsilon](double x) {
-                                                                            return std::sqrt(x + epsilon);
-                                                                        }).array())).eval();
+            this->variables["cB"].array() += this->variables["gB"].array().square();
+            this->variables["b"].array() -= (learningRate * this->variables["gB"].array() /
+                                             this->variables["cB"].unaryExpr(
+                                                 [epsilon](double x) {
+                                                     return std::sqrt(x + epsilon);
+                                                 }).array());
         }
 
         void ComputationCpu::gradientNesterov(double learningRate, T_Size batchSize) {
             double gamma = 0.9;
 
-            Eigen::MatrixXd s_prev = this->variables["cW"];
-
-            this->variables["cW"] =
-                    ((gamma * this->variables["cW"].array()) - (learningRate * this->variables["gW"].array())).eval();
-            this->variables["W"] = (this->variables["W"].array() + this->variables["cW"].array() +
-                                    (gamma * (this->variables["cW"].array() - s_prev.array()))).eval();
-
+            Eigen::MatrixXd s_prev_w = this->variables["cW"];
+            this->variables["cW"] = (gamma * this->variables["cW"].array()) - (
+                                        learningRate * this->variables["gW"].array());
+            this->variables["W"].array() += this->variables["cW"].array() + (
+                gamma * (this->variables["cW"].array() - s_prev_w.array()));
 
             Eigen::VectorXd s_prev_b = this->variables["cB"];
-
-            this->variables["cB"] =
-                    ((gamma * this->variables["cB"].array()) - (learningRate * this->variables["gB"].array())).eval();
-            this->variables["b"] = (this->variables["b"].array() + this->variables["cB"].array() +
-                                    (gamma * (this->variables["cB"].array() - s_prev_b.array()))).eval();
+            this->variables["cB"] = (gamma * this->variables["cB"].array()) - (
+                                        learningRate * this->variables["gB"].array());
+            this->variables["b"].array() += this->variables["cB"].array() + (
+                gamma * (this->variables["cB"].array() - s_prev_b.array()));
         }
 
         void ComputationCpu::gradientMomentum(double learningRate, T_Size batchSize) {
             double alpha = learningRate / (double) batchSize;
             double gamma = 0.9;
 
-            this->variables["cW"] = ((gamma * this->variables["cW"].array()) + (alpha * this->variables["gW"].array())).
-                    eval();
-            this->variables["W"] = (this->variables["W"].array() - this->variables["cW"].array()).eval();
+            this->variables["cW"] = ((gamma * this->variables["cW"].array()) + (alpha * this->variables["gW"].array()));
+            this->variables["W"] -= this->variables["cW"];
 
-            this->variables["cB"] = ((gamma * this->variables["cB"].array()) + (alpha * this->variables["gB"].array())).
-                    eval();
-            this->variables["b"] = (this->variables["b"].array() - this->variables["cB"].array()).eval();
+            this->variables["cB"] = ((gamma * this->variables["cB"].array()) + (alpha * this->variables["gB"].array()));
+            this->variables["b"] -= this->variables["cB"];
         }
 
         void ComputationCpu::gradientAdadelta(double learningRate, T_Size batchSize) {
@@ -259,32 +241,27 @@ namespace Impulse {
             double epsilon = 1e-6;
 
             this->variables["cW"] = ((gamma * this->variables["cW"].array()) +
-                                     (1.0 - gamma) * (this->variables["gW"].array() * this->variables["gW"].array())).
-                    eval();
+                                     (1.0 - gamma) * (this->variables["gW"].array().square()));
             Eigen::MatrixXd deltaParameters = -(this->variables["vW"].unaryExpr([epsilon](double x) {
                 return std::sqrt(x + epsilon);
             }).array() / this->variables["cW"].unaryExpr([epsilon](double x) {
                 return std::sqrt(x + epsilon);
             }).array()).array() * this->variables["gW"].array();
             this->variables["vW"] =
-            ((gamma * this->variables["cW"].array()) + ((1.0 - gamma) * (deltaParameters.unaryExpr([](double x) {
-                return std::pow(x, 2);
-            }).array()))).eval();
-            this->variables["W"] = (this->variables["W"].array() + deltaParameters.array()).eval();
+                    ((gamma * this->variables["cW"].array()) + ((1.0 - gamma) * (deltaParameters.array().square()))).
+                    eval();
+            this->variables["W"] += deltaParameters;
 
             this->variables["cB"] = ((gamma * this->variables["cB"].array()) +
-                                     (1.0 - gamma) * (this->variables["gB"].array() * this->variables["gB"].array())).
-                    eval();
+                                     (1.0 - gamma) * (this->variables["gB"].array().square()));
             Eigen::MatrixXd deltaParameters2 = -(this->variables["vB"].unaryExpr([epsilon](double x) {
                 return std::sqrt(x + epsilon);
             }).array() / this->variables["cB"].unaryExpr([epsilon](double x) {
                 return std::sqrt(x + epsilon);
             }).array()) * this->variables["gB"].array();
             this->variables["vB"] = ((gamma * this->variables["cB"].array()) +
-                                     ((1.0 - gamma) * (deltaParameters2.unaryExpr([](double x) {
-                                         return std::pow(x, 2);
-                                     }).array()))).eval();
-            this->variables["b"] = (this->variables["b"].array() + deltaParameters2.array()).eval();
+                                     ((1.0 - gamma) * (deltaParameters2.array().square()))).eval();
+            this->variables["b"] += deltaParameters2;
         }
     }
 }
